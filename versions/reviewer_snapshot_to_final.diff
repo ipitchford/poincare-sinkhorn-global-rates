@@ -1,0 +1,46 @@
+--- versions/manuscript_reviewer_snapshot.md
++++ manuscript.md
+@@ -13,6 +13,7 @@
+   - \usepackage{microtype}
+   - \usepackage{booktabs}
+   - \usepackage{float}
++  - \floatplacement{figure}{H}
+ ---
+ 
+ ## Abstract
+@@ -380,11 +381,22 @@
+ \tag{30}
+ $$
+ 
++When $C=0$, one full update reaches zero gap; the iteration-zero bound is equality.
++
+ *Proof.* CDV Proposition 5.1 gives (8) with $A=C+\lambda$. Applying Theorem 1 proves (30). $\square$
+ 
+ This corollary credits the entire curvature estimate to CDV. The additional step is its conversion into a global marginal-entropy error bound. Their Theorem 1.2 has a global coefficient of the form $176(1+\kappa c_\infty/\lambda+c_\infty^2/\lambda^2)$ and an eventual coefficient $176(1+\kappa c_\infty/\lambda)$. Equation (30) obtains a linear dependence from the initial iteration. No lower bound on target atom masses is required.
+ 
+ For any other setting covered by CDV Proposition 5.1, Theorem 1 likewise gives the rate $C/(C+\lambda)$ with their stated value of $C$ and all their hypotheses retained. We state the bilinear case separately because it avoids importing additional semiconcavity notation and covers the standard quadratic-cost problem after removal of marginal-only terms.
++
++The comparison below holds nonzero geometric parameters fixed as $\lambda\downarrow0$. A deficit $d$ means a contraction factor $1-d$. The first three rows concern the bounded-density setting of Corollary 3; the last row uses the broader hypotheses of Theorem 2. These are guarantees, not assertions that every instance attains the bound.
++
++| Convergence guarantee | Small-$\lambda$ deficit | Validity |
++|:--|:--:|:--|
++| CDV, Theorem 1.2 | $\Theta(\lambda^2)$ | All iterations |
++| CDV, Corollary 3.2 | $\Theta(\lambda)$ | After an instance-dependent index |
++| Corollary 3 here | $\Theta(\lambda)$ | All iterations |
++| Theorem 2 here, one source Poincaré inequality | $\Theta(\lambda^2)$ | All iterations |
+ 
+ ## 6. A fixed source that prevents every smaller exponent
+ 
+@@ -594,9 +606,9 @@
+ 
+ For the cusp source, quadrature gives $D_{0.1}=0.0647035371183$, $D_{0.01}=0.00179454249623$, and $D_{0.001}=0.0000353004893444$. These numbers are floating-point checks, not interval certificates. The source normalisation agreed with one to within $3\times10^{-16}$ in the recorded run. The checked global error-bound ratios remained below one; the largest were approximately $0.79150$ for the uniform source and $0.52720$ for the cusp source.
+ 
+-The initial numerical implementation exposed a cancellation-sensitive tiny-gap discrepancy. The final script evaluates scaled integrands before quadrature. The verification record preserves that correction and the final environment, tolerances, counts and output. A complementary test with a Gaussian source, a bounded sine cost and five target atoms checks the noncompact-source and multiple-target setting; its exact scope is recorded separately. Numerical discretisation of a source is only a check of the continuous formulas, not a claim that the discrete measure satisfies (6).
+-
+-![Local contraction deficits. The uniform source has a linear deficit; the fixed cusp approaches a quadratic power with a logarithmic correction. The figure evaluates the exact scalar derivative, rather than fitting a rate from a short trajectory.](figures/sharpness_plot.png){width=92%}
++The initial numerical implementation exposed a cancellation-sensitive tiny-gap discrepancy. The final script evaluates scaled integrands before quadrature. The verification record preserves that correction and the final environment, tolerances, counts and output. A complementary test with a Gaussian source, a bounded sine cost and five target atoms checks the noncompact-source and multiple-target setting; its exact scope is recorded separately. The two programmes do not numerically test the varying-source family of Proposition 5, whose verification is analytic. Numerical discretisation of a source is only a check of the continuous formulas, not a claim that the discrete measure satisfies (6).
++
++![Local contraction deficits, with $r_\lambda=1-D_\lambda$. The uniform source has a linear deficit; the fixed cusp approaches a quadratic power with a logarithmic correction. The figure evaluates the exact scalar derivative.](figures/sharpness_plot.png){width=82%}
+ 
+ ## 8. Prior work, scope, and unresolved questions
+ 

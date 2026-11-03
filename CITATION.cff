@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Curvature, relative entropy, and global Sinkhorn convergence"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23929617
+date-released: 2026-11-03
+repository-code: "https://github.com/ipitchford/poincare-sinkhorn-global-rates"
+url: "https://evidencepress.org/releases/poincare-sinkhorn-global-rates/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23929617
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23929616
+    description: "Concept DOI (all versions)"
+keywords:
+  - Sinkhorn algorithm
+  - entropic optimal transport
+  - Poincaré inequality
+  - convergence rate
+  - matrix scaling
+abstract: "One Poincaré inequality on the source measure makes every full iteration of the exact continuous Sinkhorn algorithm shrink the entropic dual gap by at most C_P L^2/(C_P L^2 + lambda^2), from the first iteration, for every bounded initial potential and every target (Theorem 2), so about (C_P L^2/lambda^2) log(1/eps) iterations suffice. This covers quadratic or bilinear cost with Gaussian or exponential-tailed sources and compactly supported targets such as point clouds (Theorem 3, Corollary 4), and turns the curvature estimate of Chizat, Delalande and Vaskevicius into a global factor C/(C + lambda) in their bounded-density settings (Corollary 5). The exponent 2 is sharp in general but no single fixed source attains order lambda^2 (Theorem 6, Propositions 7-8, Corollary 9). Chiarini, Conforti, Greco and Tamanini obtained the same rate shape under a Talagrand inequality and Hessian bounds. Population measures only; unrefereed candidate; internal AI-assisted review only; scripts are floating-point checks. Text and figures CC0-1.0; code MIT."

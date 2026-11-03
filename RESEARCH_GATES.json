@@ -1,0 +1,234 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated prior-art record (prior_art/novelty_report.md, 1 November 2026, with a dated note and a 3 November addendum), the internal review searches of 3 November 2026 (review/REVIEW_SUMMARY.md) and the reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Theorem 1: curvature-to-entropy transfer giving a polynomial reverse-entropy coefficient and per-iteration contraction 1 - lambda/A.",
+   "unit": "statement",
+   "paperLocation": "Theorem 1, Section 4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv full text, publisher pages and citation links (prior_art/novelty_report.md)",
+     "query": "Sinkhorn convergence Poincare inequality; Sinkhorn rate polynomial in regularisation; curvature semidual Sinkhorn; CDV Remark 3.1; aliases in prior_art/target.yaml"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review and revision: entropic OT convergence, Talagrand/Poincare, mirror descent literatures (review/REVIEW_SUMMARY.md; manuscript Sections 2.3 and 9)",
+     "query": "Chiarini-Conforti-Greco-Tamanini Propositions 1.8-1.9; Aubin-Frankowski-Korba-Leger Theorem 4; Di Marino announcements; Srinivasan-Slotine; Gozlan 2010"
+    }
+   ],
+   "closestPriorWork": "AFKL 2022 (mirror descent; exponential coefficient in their Proposition 7); CDV 2026 Remark 5.2 (anticipated estimate)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 2: one source Poincare inequality gives the factor C_P L^2/(C_P L^2 + lambda^2) for every lambda and bounded initial potential.",
+   "unit": "statement",
+   "paperLocation": "Theorem 2, Section 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv full text, publisher pages and citation links (prior_art/novelty_report.md)",
+     "query": "Sinkhorn convergence Poincare inequality; Sinkhorn rate polynomial in regularisation; curvature semidual Sinkhorn; CDV Remark 3.1; aliases in prior_art/target.yaml"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review and revision: entropic OT convergence, Talagrand/Poincare, mirror descent literatures (review/REVIEW_SUMMARY.md; manuscript Sections 2.3 and 9)",
+     "query": "Chiarini-Conforti-Greco-Tamanini Propositions 1.8-1.9; Aubin-Frankowski-Korba-Leger Theorem 4; Di Marino announcements; Srinivasan-Slotine; Gozlan 2010"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "GitHub issues, discussions and code search; Evidence Press release feed (prior_art/novelty_report.md Addendum)",
+     "query": "sinkhorn poincare; sinkhorn convergence rate poincare; sinkhorn global convergence rate; sinkhorn dual gap contraction; chizat delalande vaskevicius; related variants"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "api.crossref.org and the arXiv API",
+     "query": "registry records for every work in the bibliography (refs.bib)"
+    }
+   ],
+   "closestPriorWork": "CCGT 2025 Propositions 1.8(i), 1.9(i): same rate shape under a Talagrand inequality and Hessian bounds; Di Marino announcements (two Poincare marginals, not inspectable)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Theorem 3 and Corollary 4: unbounded costs with compactly supported targets, including quadratic cost with exponential-tailed sources that satisfy no Talagrand inequality.",
+   "unit": "statement",
+   "paperLocation": "Section 5.1",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv full text, publisher pages and citation links (prior_art/novelty_report.md)",
+     "query": "Sinkhorn convergence Poincare inequality; Sinkhorn rate polynomial in regularisation; curvature semidual Sinkhorn; CDV Remark 3.1; aliases in prior_art/target.yaml"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review and revision: entropic OT convergence, Talagrand/Poincare, mirror descent literatures (review/REVIEW_SUMMARY.md; manuscript Sections 2.3 and 9)",
+     "query": "Chiarini-Conforti-Greco-Tamanini Propositions 1.8-1.9; Aubin-Frankowski-Korba-Leger Theorem 4; Di Marino announcements; Srinivasan-Slotine; Gozlan 2010"
+    }
+   ],
+   "closestPriorWork": "CCGT 2025 Proposition 1.9(i) covers Talagrand sources with compact targets",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Corollary 5: global rate C/(C + lambda) in CDV bounded-density and log-concave settings.",
+   "unit": "statement",
+   "paperLocation": "Section 6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv full text, publisher pages and citation links (prior_art/novelty_report.md)",
+     "query": "Sinkhorn convergence Poincare inequality; Sinkhorn rate polynomial in regularisation; curvature semidual Sinkhorn; CDV Remark 3.1; aliases in prior_art/target.yaml"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review and revision: entropic OT convergence, Talagrand/Poincare, mirror descent literatures (review/REVIEW_SUMMARY.md; manuscript Sections 2.3 and 9)",
+     "query": "Chiarini-Conforti-Greco-Tamanini Propositions 1.8-1.9; Aubin-Frankowski-Korba-Leger Theorem 4; Di Marino announcements; Srinivasan-Slotine; Gozlan 2010"
+    }
+   ],
+   "closestPriorWork": "CDV 2026 (curvature estimate, Proposition 5.1; local or weaker global rates)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 6, Propositions 7-8, Corollary 9: sharpness of the exponent 2, including for Talagrand sources; no single fixed source attains order lambda^2.",
+   "unit": "statement",
+   "paperLocation": "Section 7",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv full text, publisher pages and citation links (prior_art/novelty_report.md)",
+     "query": "Sinkhorn convergence Poincare inequality; Sinkhorn rate polynomial in regularisation; curvature semidual Sinkhorn; CDV Remark 3.1; aliases in prior_art/target.yaml"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review and revision: entropic OT convergence, Talagrand/Poincare, mirror descent literatures (review/REVIEW_SUMMARY.md; manuscript Sections 2.3 and 9)",
+     "query": "Chiarini-Conforti-Greco-Tamanini Propositions 1.8-1.9; Aubin-Frankowski-Korba-Leger Theorem 4; Di Marino announcements; Srinivasan-Slotine; Gozlan 2010"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "GitHub issues, discussions and code search; Evidence Press release feed (prior_art/novelty_report.md Addendum)",
+     "query": "sinkhorn poincare; sinkhorn convergence rate poincare; sinkhorn global convergence rate; sinkhorn dual gap contraction; chizat delalande vaskevicius; related variants"
+    }
+   ],
+   "closestPriorWork": "Di Marino 2021 seminar abstract mentions counterexamples (details not inspectable)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Method: tilted-curvature lower bound integrated along finite partitions into a reverse-entropy inequality, with the conditional-variance decomposition.",
+   "unit": "method",
+   "paperLocation": "Sections 4.1-4.3, 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv full text, publisher pages and citation links (prior_art/novelty_report.md)",
+     "query": "Sinkhorn convergence Poincare inequality; Sinkhorn rate polynomial in regularisation; curvature semidual Sinkhorn; CDV Remark 3.1; aliases in prior_art/target.yaml"
+    },
+    {
+     "date": "2026-11-03",
+     "corpus": "internal reviewers during review and revision: entropic OT convergence, Talagrand/Poincare, mirror descent literatures (review/REVIEW_SUMMARY.md; manuscript Sections 2.3 and 9)",
+     "query": "Chiarini-Conforti-Greco-Tamanini Propositions 1.8-1.9; Aubin-Frankowski-Korba-Leger Theorem 4; Di Marino announcements; Srinivasan-Slotine; Gozlan 2010"
+    }
+   ],
+   "closestPriorWork": "Variance decomposition for Gibbs measures and mixtures (Otto-Reznikoff 2007; Grunewald et al. 2009; Chafai-Malrieu 2010); dual-space preconditioning (Maddison et al. 2021)",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Chiarini, Conforti, Greco and Tamanini, arXiv:2412.09235v2 (2025)",
+   "usedFor": "Closest prior rates under Talagrand inequalities; side-by-side comparison",
+   "readWhat": "Theorem 1.3, Propositions 1.5-1.9 and convention (1.10)",
+   "date": "2026-11-03",
+   "evidenceLocator": "manuscript Sections 2.3 and 9.1; review/REVIEW_SUMMARY.md"
+  },
+  {
+   "citation": "Chizat, Delalande and Vaskevicius, Mathematical Programming 215 (2026) 809-858, doi:10.1007/s10107-025-02242-z",
+   "usedFor": "Curvature estimate (Proposition 5.1), Remarks 3.1 and 5.2, Di Marino account",
+   "readWhat": "Sections 1-5 and appendices used",
+   "date": "2026-11-01",
+   "evidenceLocator": "prior_art/novelty_report.md; manuscript Sections 2.3 and 6"
+  },
+  {
+   "citation": "Aubin-Frankowski, Korba and Leger, NeurIPS 35 (2022), doi:10.52202/068431-1255",
+   "usedFor": "Mirror-descent route (Theorem 4, Proposition 7)",
+   "readWhat": "Sinkhorn sections and Theorem 4",
+   "date": "2026-11-03",
+   "evidenceLocator": "manuscript Remark 4.2; review/REVIEW_SUMMARY.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority for the lambda^2 exponent under Poincare assumptions is uncertain: Di Marino announced a two-marginal result whose proofs could not be inspected.",
+   "closingQuestion": "What exactly did the announced result prove?",
+   "triedOrSearched": "Simons 2021 abstract read; Pisa 2022 announcement known only through CDV; searches of 1 and 3 November 2026.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Requires author enquiry, out of scope.",
+   "whyNotClosedNow": "No public text available."
+  },
+  {
+   "limitation": "Population (continuous) measures only; empirical sources are not covered.",
+   "closingQuestion": "Is there a discrete analogue with a graph Poincare inequality?",
+   "triedOrSearched": "Stated as Open question 4.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond this release."
+  },
+  {
+   "limitation": "Unbounded targets with quadratic cost (e.g. Gaussian to Gaussian) are not covered.",
+   "closingQuestion": "Does one Poincare inequality suffice there?",
+   "triedOrSearched": "Stated as Open question 3.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond this release."
+  },
+  {
+   "limitation": "Constants are not sharp; the eventual factor in Remark 5.2 is a conjecture.",
+   "closingQuestion": "Is (B/(B + lambda^2))^2 the eventual factor?",
+   "triedOrSearched": "Local limit proved in the two-atom model; numerical Poincare constants in Remark 7.2.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Labelled as a conjecture.",
+   "whyNotClosedNow": "Requires a separate proof."
+  },
+  {
+   "limitation": "Overlap with CCGT and AFKL was under-acknowledged in the first version (review objection).",
+   "closingQuestion": "Is the contribution correctly positioned?",
+   "triedOrSearched": "Repositioned in Sections 2.3, 9.1 and Remark 4.2 with a side-by-side comparison.",
+   "estimatedCost": "3 hours",
+   "decision": "CLOSED",
+   "cheap": true
+  },
+  {
+   "limitation": "Bounded costs only in the first version (review objection).",
+   "closingQuestion": "Do the rates extend to unbounded costs?",
+   "triedOrSearched": "Theorem 3, Corollary 4 and the Laplace example.",
+   "estimatedCost": "4 hours",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, 3 November 2026",
+  "date": "2026-11-03",
+  "proposals": [
+   "Remove bounded-cost hypothesis",
+   "Exponential-tailed sources without Talagrand inequality",
+   "Sharpness for Talagrand sources",
+   "Stopping certificate and inexact iterations",
+   "Exact local constants"
+  ],
+  "actions": [
+   "Theorem 3 and Corollary 4",
+   "Laplace example in Section 5.1",
+   "Corollary 9",
+   "Remark 5.1 and Section 5.3",
+   "Refined expansion (44), Remarks 5.2, 7.1, 7.2"
+  ]
+ }
+}

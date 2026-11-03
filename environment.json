@@ -1,0 +1,17 @@
+{
+  "release_replay": {
+    "python": "3.12.11",
+    "platform": "macOS-27.2-arm64 (Apple silicon)",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "mpmath": "1.4.1"
+  },
+  "shipped_outputs": {
+    "checks/sharpness_checks.json and checks/multitarget_gaussian_checks.json": "Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0",
+    "checks/revision_checks.json": "Python 3.11.14, mpmath 1.4.1"
+  },
+  "pandoc": "pandoc 3.9",
+  "pdf_engine": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026, TinyTeX)",
+  "reproducibility": "Outputs reproduce to floating-point roundoff, not bit for bit across Python and BLAS builds. The release replay (normal and -O) matched every shipped number to within 2.3e-12 (scaled), with all string and boolean fields identical."
+}

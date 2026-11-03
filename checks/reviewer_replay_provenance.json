@@ -1,0 +1,44 @@
+{
+  "review_date": "2026-11-01",
+  "captured_utc": "2026-11-01T18:11:36.874690+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "records": [
+    {
+      "source": "/workspace/scratch/324f0dc1e52b/sinkhorn_result/manuscript.md",
+      "snapshot": "/tmp/sinkhorn_reviewer_final_snapshot/manuscript.md",
+      "sha256": "164b08dd44216fec580977b676f32f19131a4f0ff0efd261ab92c559b4afddb0"
+    },
+    {
+      "source": "/workspace/scratch/324f0dc1e52b/sinkhorn_result/code/sharpness_check.py",
+      "snapshot": "/tmp/sinkhorn_reviewer_final_snapshot/sharpness_check.py",
+      "sha256": "a759f8da7b46cc447548b9deb62610d0756ec7ba538d6f68c187db505cfcf4d3",
+      "output_directory": "/tmp/sinkhorn_reviewer_final_sharpness",
+      "returncode": 0,
+      "stdout": "Floating-point sanity checks only; not a proof certificate.\nuniform: normalisation=1; C_P=0.4052847345693511; max error-bound ratio=0.791499226; max conditional-variance ratio=0.662885466; max descent-bound ratio=0.999829142.\nuniform: 90 parameter-grid checks and 5 actual nonzero-initialisation trajectories.\n  lambda=0.5: 15 steps; final ratio=0.268309713593; predicted=0.268309713711; absolute difference=1.18e-10.\n  lambda=0.2: 47 steps; final ratio=0.640029054928; predicted=0.640029054966; absolute difference=3.75e-11.\n  lambda=0.1: 106 steps; final ratio=0.810000000736; predicted=0.810000000742; absolute difference=5.73e-12.\n  lambda=0.05: 232 steps; final ratio=0.902499999999; predicted=0.9025; absolute difference=7.2e-13.\n  lambda=0.02: 633 steps; final ratio=0.9604; predicted=0.9604; absolute difference=5.03e-14.\nlog_cusp: normalisation=0.9999999999999998; C_P=0.75; max error-bound ratio=0.527191967; max conditional-variance ratio=0.369589289; max descent-bound ratio=0.999828794.\nlog_cusp: 90 parameter-grid checks and 5 actual nonzero-initialisation trajectories.\n  lambda=0.5: 15 steps; final ratio=0.276454530382; predicted=0.276454530669; absolute difference=2.88e-10.\n  lambda=0.2: 56 steps; final ratio=0.6944133852; predicted=0.694413385546; absolute difference=3.46e-10.\n  lambda=0.1: 158 steps; final ratio=0.874779473271; predicted=0.874779473479; absolute difference=2.08e-10.\n  lambda=0.05: 458 steps; final ratio=0.954010835517; predicted=0.954010835609; absolute difference=9.22e-11.\n  lambda=0.02: 1954 steps; final ratio=0.988932809764; predicted=0.988932809789; absolute difference=2.57e-11.\nFailures: 0. Elapsed: 2.596s.\n",
+      "stderr": "",
+      "passed": true,
+      "failures": [],
+      "runtime_versions": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0"
+      }
+    },
+    {
+      "source": "/workspace/scratch/324f0dc1e52b/sinkhorn_result/code/multitarget_gaussian_check.py",
+      "snapshot": "/tmp/sinkhorn_reviewer_final_snapshot/multitarget_gaussian_check.py",
+      "sha256": "4d6c00c011628f120ef17da1195796cdf156edcb71ec88e868bd926f94a8ee8e",
+      "output_directory": "/tmp/sinkhorn_reviewer_final_gaussian",
+      "returncode": 0,
+      "stdout": "Floating-point Gauss--Hermite approximation, not a proof.\nSource N(0,1), c(x,y)=sin(x)y, five target atoms; C_P=L=1.\nGauss--Hermite resolutions: [4096, 16384]; lambda values: [0.5, 0.2, 0.1].\nn=4096, lambda=0.5: optimum marginal residual 1.11e-16; 6 potential cases; max error-bound ratio 0.259693911; max variance-bound ratio 0.265275577; trajectory 20 steps to residual 6.71e-13.\nn=4096, lambda=0.2: optimum marginal residual 4.07e-14; 6 potential cases; max error-bound ratio 0.0772775348; max variance-bound ratio 0.184978328; trajectory 55 steps to residual 8.79e-13.\nn=4096, lambda=0.1: optimum marginal residual 1.11e-16; 6 potential cases; max error-bound ratio 0.0286374251; max variance-bound ratio 0.106629533; trajectory 116 steps to residual 8.79e-13.\nn=16384, lambda=0.5: optimum marginal residual 7.22e-16; 6 potential cases; max error-bound ratio 0.259693911; max variance-bound ratio 0.265275577; trajectory 20 steps to residual 6.72e-13.\nn=16384, lambda=0.2: optimum marginal residual 4.07e-14; 6 potential cases; max error-bound ratio 0.0772775348; max variance-bound ratio 0.184978328; trajectory 55 steps to residual 8.79e-13.\nn=16384, lambda=0.1: optimum marginal residual 5e-16; 6 potential cases; max error-bound ratio 0.0286374251; max variance-bound ratio 0.106629533; trajectory 116 steps to residual 8.79e-13.\nlambda=0.5: resolution differences {'dual_gap': 9.2148511043888e-15, 'marginal_kl': 1.176836406102666e-14, 'next_dual_gap': 1.915134717478395e-15, 'conditional_variance_bound_ratio': 3.47499806707674e-14, 'relative_hessian_min_eigenvalue': 6.467049118441537e-15, 'optimum_potential': 3.019806626980426e-14}\nlambda=0.2: resolution differences {'dual_gap': 1.7541523789077473e-14, 'marginal_kl': 5.184741524999481e-14, 'next_dual_gap': 1.0158540675320182e-14, 'conditional_variance_bound_ratio': 5.3179682879545e-14, 'relative_hessian_min_eigenvalue': 4.2549297418759124e-14, 'optimum_potential': 3.108624468950438e-14}\nlambda=0.1: resolution differences {'dual_gap': 1.3933298959045715e-13, 'marginal_kl': 3.7048586420951324e-11, 'next_dual_gap': 4.342304293913912e-12, 'conditional_variance_bound_ratio': 3.258145142570612e-10, 'relative_hessian_min_eigenvalue': 4.655331675706975e-12, 'optimum_potential': 3.1530333899354446e-14}\nFailures: 0; elapsed 12.390s.\n",
+      "stderr": "",
+      "passed": true,
+      "failures": [],
+      "runtime_versions": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0"
+      }
+    }
+  ]
+}

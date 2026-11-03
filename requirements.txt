@@ -1,0 +1,7 @@
+# Release replay: Python 3.12.11. Shipped outputs: Python 3.12.14 (sharpness, multitarget) and 3.11.14 (revision checks).
+numpy==2.3.5
+scipy==1.17.0
+# Required by code/revision_checks.py.
+mpmath==1.4.1
+# Optional for mathematical checks; required to regenerate figures.
+matplotlib==3.10.8

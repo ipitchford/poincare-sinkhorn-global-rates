@@ -1,0 +1,19 @@
+--- versions/manuscript_reviewed.md
++++ manuscript.md
+@@ -13,6 +13,7 @@
+   - \usepackage{microtype}
+   - \usepackage{booktabs}
+   - \usepackage{float}
++  - \floatplacement{figure}{H}
+ ---
+ 
+ ## Abstract
+@@ -607,7 +608,7 @@
+ 
+ The initial numerical implementation exposed a cancellation-sensitive tiny-gap discrepancy. The final script evaluates scaled integrands before quadrature. The verification record preserves that correction and the final environment, tolerances, counts and output. A complementary test with a Gaussian source, a bounded sine cost and five target atoms checks the noncompact-source and multiple-target setting; its exact scope is recorded separately. The two programmes do not numerically test the varying-source family of Proposition 5, whose verification is analytic. Numerical discretisation of a source is only a check of the continuous formulas, not a claim that the discrete measure satisfies (6).
+ 
+-![Local contraction deficits, with $r_\lambda=1-D_\lambda$. The uniform source has a linear deficit; the fixed cusp approaches a quadratic power with a logarithmic correction. The figure evaluates the exact scalar derivative.](figures/sharpness_plot.png){width=92%}
++![Local contraction deficits, with $r_\lambda=1-D_\lambda$. The uniform source has a linear deficit; the fixed cusp approaches a quadratic power with a logarithmic correction. The figure evaluates the exact scalar derivative.](figures/sharpness_plot.png){width=82%}
+ 
+ ## 8. Prior work, scope, and unresolved questions
+ 

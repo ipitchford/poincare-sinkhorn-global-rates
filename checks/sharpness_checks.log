@@ -1,0 +1,16 @@
+Floating-point sanity checks only; not a proof certificate.
+uniform: normalisation=1; C_P=0.4052847345693511; max error-bound ratio=0.791499226; max conditional-variance ratio=0.662885466; max descent-bound ratio=0.999829142.
+uniform: 90 parameter-grid checks and 5 actual nonzero-initialisation trajectories.
+  lambda=0.5: 15 steps; final ratio=0.268309713593; predicted=0.268309713711; absolute difference=1.18e-10.
+  lambda=0.2: 47 steps; final ratio=0.640029054928; predicted=0.640029054966; absolute difference=3.75e-11.
+  lambda=0.1: 106 steps; final ratio=0.810000000736; predicted=0.810000000742; absolute difference=5.73e-12.
+  lambda=0.05: 232 steps; final ratio=0.902499999999; predicted=0.9025; absolute difference=7.2e-13.
+  lambda=0.02: 633 steps; final ratio=0.9604; predicted=0.9604; absolute difference=5.03e-14.
+log_cusp: normalisation=0.9999999999999998; C_P=0.75; max error-bound ratio=0.527191967; max conditional-variance ratio=0.369589289; max descent-bound ratio=0.999828794.
+log_cusp: 90 parameter-grid checks and 5 actual nonzero-initialisation trajectories.
+  lambda=0.5: 15 steps; final ratio=0.276454530382; predicted=0.276454530669; absolute difference=2.88e-10.
+  lambda=0.2: 56 steps; final ratio=0.6944133852; predicted=0.694413385546; absolute difference=3.46e-10.
+  lambda=0.1: 158 steps; final ratio=0.874779473271; predicted=0.874779473479; absolute difference=2.08e-10.
+  lambda=0.05: 458 steps; final ratio=0.954010835517; predicted=0.954010835609; absolute difference=9.22e-11.
+  lambda=0.02: 1954 steps; final ratio=0.988932809764; predicted=0.988932809789; absolute difference=2.57e-11.
+Failures: 0. Elapsed: 2.959s.

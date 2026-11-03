@@ -1,0 +1,170 @@
+--- versions/manuscript_initial.md
++++ manuscript.md
+@@ -13,12 +13,12 @@
+   - \usepackage{microtype}
+   - \usepackage{booktabs}
+   - \usepackage{float}
+-  - \hypersetup{pdftitle={Curvature, relative entropy, and global Sinkhorn convergence}}
++  - \floatplacement{figure}{H}
+ ---
+ 
+ ## Abstract
+ 
+-We prove explicit global convergence bounds for exact Sinkhorn iterations by converting a uniform curvature estimate, measured in the current marginal, into a relative-entropy error bound. If the source satisfies a Poincaré inequality with constant $C_P$ and the bounded cost has source gradient bounded by $L$, the dual gap contracts in each full iteration by at most $C_PL^2/(C_PL^2+\lambda^2)$, for every bounded initial potential and every target probability measure. Neither convexity of the source support nor a density assumption on the target is required. The argument uses finite-dimensional convex conjugacy on measurable partitions; it does not invert an infinite-dimensional Hessian. Applying the same transfer to an existing curvature theorem of Chizat, Delalande and Vaškevičius gives a global contraction $C/(C+\lambda)$ in their bounded-density setting, improving their global quadratic dependence on regularisation to linear dependence. Finally, one fixed source with density $(2/5)|x|\log^2(e/|x|)$ has an explicit Poincaré constant and local contraction deficit asymptotic to $(8/5)\log(2)\lambda^2\log^2(1/\lambda)$. Thus no smaller polynomial exponent than two is valid under a Poincaré assumption alone. The literature already supplies reverse-entropy methods and, indirectly, qualitative polynomial convergence in a smooth compact subclass. Our claims concern the explicit bounds, their stated scope, the global bounded-density improvement, and the exponent obstruction.
++We prove explicit global convergence bounds for exact Sinkhorn iterations by converting a uniform curvature estimate, measured in the current marginal, into a relative-entropy error bound. If the source satisfies a Poincaré inequality with constant $C_P$ and the bounded cost has source gradient bounded by $L$, the dual gap contracts in each full iteration by at most $C_PL^2/(C_PL^2+\lambda^2)$, for every bounded initial potential and every target probability measure. Neither convexity of the source support nor a density assumption on the target is required. The argument uses finite-dimensional convex conjugacy on measurable partitions; it does not invert an infinite-dimensional Hessian. Applying the same transfer to an existing curvature theorem of Chizat, Delalande and Vaškevičius gives a global contraction $C/(C+\lambda)$ in their bounded-density setting, improving their global quadratic dependence on regularisation to linear dependence. One fixed Poincaré source has local contraction deficit asymptotic to $(8/5)\log(2)\lambda^2\log^2(1/\lambda)$, while a family with uniformly bounded Poincaré constants attains order $\lambda^2$. The polynomial exponent is therefore sharp. The literature already supplies reverse-entropy methods and, indirectly, qualitative polynomial convergence in overlapping smooth settings. Our claims concern the explicit bounds, their stated scope, the global bounded-density improvement, and the sharpness constructions.
+ 
+ ## 1. Problem and contribution
+ 
+@@ -38,9 +38,9 @@
+ 
+ 1. A source Poincaré inequality yields the explicit global rate in Theorem 2, with no condition on the target and only a first derivative of the cost.
+ 2. An abstract transfer from curvature to relative entropy gives a global linear-in-$\lambda$ rate in the CDV bounded-density setting, without an initial phase or a special initialisation.
+-3. A single fixed source proves that the power two cannot be improved throughout the Poincaré class, even for a bounded bilinear cost and two target atoms.
+-
+-The transfer uses established convex-duality and relative-smoothness ideas. Reverse relative-entropy comparisons for entropic plans appear in Aubin-Frankowski, Korba and Léger (2022), with a coefficient exponential in inverse regularisation. We replace that coefficient by explicit geometric quantities. A further overlap matters: on a bounded support, the quadratic-linear transport inequality of Bobkov, Gentil and Ledoux (2001) upgrades a suitable Poincaré inequality to a quadratic transport inequality. Combined with Chiarini, Conforti, Greco and Tamanini (2025), this already implies a qualitative quadratic-rate result in a smooth compact subclass. We therefore do not claim the first qualitative polynomial convergence theorem for that subclass. Section 8 and the accompanying novelty report separate these precedents from the conclusions proved here.
++3. A single fixed source proves that the power two cannot be improved throughout the Poincaré class, even for a bounded bilinear cost and two target atoms. A family with uniformly bounded Poincaré constants attains exact quadratic order.
++
++The transfer uses established convex-duality and relative-smoothness ideas. Reverse relative-entropy comparisons for entropic plans appear in Aubin-Frankowski, Korba and Léger (2022), with a coefficient exponential in inverse regularisation. We replace that coefficient by explicit geometric quantities. Qualitative polynomial convergence in overlapping smooth settings also follows by combining the quadratic-linear transport inequality of Bobkov, Gentil and Ledoux (2001) with the generalised semiconcavity theorem of Chiarini, Conforti, Greco and Tamanini (2025). This overlap is not confined to compact supports. We therefore do not claim the first qualitative one-Poincaré polynomial convergence theorem. Section 8 and the accompanying novelty report separate these precedents from the conclusions proved here.
+ 
+ ## 2. Definitions and assumptions
+ 
+@@ -272,6 +272,8 @@
+ \tag{22}
+ $$
+ 
++When $B=0$, the statement means that one full iteration reaches zero gap; the iteration-zero bound is equality.
++
+ The corresponding pairwise comparison is
+ 
+ $$
+@@ -379,11 +381,22 @@
+ \tag{30}
+ $$
+ 
++When $C=0$, one full update reaches zero gap; the iteration-zero bound is equality.
++
+ *Proof.* CDV Proposition 5.1 gives (8) with $A=C+\lambda$. Applying Theorem 1 proves (30). $\square$
+ 
+ This corollary credits the entire curvature estimate to CDV. The additional step is its conversion into a global marginal-entropy error bound. Their Theorem 1.2 has a global coefficient of the form $176(1+\kappa c_\infty/\lambda+c_\infty^2/\lambda^2)$ and an eventual coefficient $176(1+\kappa c_\infty/\lambda)$. Equation (30) obtains a linear dependence from the initial iteration. No lower bound on target atom masses is required.
+ 
+ For any other setting covered by CDV Proposition 5.1, Theorem 1 likewise gives the rate $C/(C+\lambda)$ with their stated value of $C$ and all their hypotheses retained. We state the bilinear case separately because it avoids importing additional semiconcavity notation and covers the standard quadratic-cost problem after removal of marginal-only terms.
++
++The comparison below holds nonzero geometric parameters fixed as $\lambda\downarrow0$. A deficit $d$ means a contraction factor $1-d$. The first three rows concern the bounded-density setting of Corollary 3; the last row uses the broader hypotheses of Theorem 2. These are guarantees, not assertions that every instance attains the bound.
++
++| Convergence guarantee | Small-$\lambda$ deficit | Validity |
++|:--|:--:|:--|
++| CDV, Theorem 1.2 | $\Theta(\lambda^2)$ | All iterations |
++| CDV, Corollary 3.2 | $\Theta(\lambda)$ | After an instance-dependent index |
++| Corollary 3 here | $\Theta(\lambda)$ | All iterations |
++| Theorem 2 here, one source Poincaré inequality | $\Theta(\lambda^2)$ | All iterations |
+ 
+ ## 6. A fixed source that prevents every smaller exponent
+ 
+@@ -522,6 +535,63 @@
+ 
+ Theorem 4 proves optimality of the polynomial exponent. It does not assert that the constant in (22) is sharp, or that this fixed source has an exact $\Theta(\lambda^2)$ deficit. The logarithmic factor is stated explicitly. The density in (31) has no positive lower bound, so the example does not contradict Corollary 3.
+ 
++### 6.4. Exact quadratic order uniformly over a Poincaré class
++
++The logarithmic factor can be removed when the source is allowed to vary with regularisation, while its Poincaré constant stays uniformly bounded.
++
++**Proposition 5 (uniform-class sharpness).** Keep the two-atom target and cost $c(x,y)=-xy$. For $0<\lambda\le1/2$, let
++
++$$
++\rho_\lambda(x)=\min\{\lambda\cosh(x/\lambda),1\},\qquad
++w_\lambda(x)=\frac{\rho_\lambda(x)}{2I_\lambda},\quad |x|<1,
++$$
++
++where
++
++$$
++I_\lambda=1-\lambda\operatorname{arcosh}(1/\lambda)
+++\lambda\sqrt{1-\lambda^2}.
++\tag{38}
++$$
++
++Every $w_\lambda$ has $C_P\le1+\pi/2$. Its local dual-gap contraction deficit satisfies
++
++$$
++1-(1-D_\lambda)^2\sim\pi\lambda^2.
++\tag{39}
++$$
++
++*Proof.* The transition point is $x_*=\lambda\operatorname{arcosh}(1/\lambda)<1$. Integrating on either side gives $\int_0^1\rho_\lambda=I_\lambda\le1$. The same anchored Cauchy--Schwarz proof used above gives
++
++$$
++C_P\le\left(\int_0^1\rho_\lambda\right)
++\left(\int_0^1\rho_\lambda^{-1}\right)
++\le1+\pi/2,
++$$
++
++because
++
++$$
++\int_0^1\rho_\lambda(x)^{-1}\,dx
++=\arccos\lambda+1-\lambda\operatorname{arcosh}(1/\lambda)
++\le1+\pi/2.
++$$
++
++The exact conditional-variance integral is
++
++$$
++D_\lambda=
++\frac{\lambda^2\arccos\lambda+
++\lambda\bigl[\tanh(1/\lambda)-\sqrt{1-\lambda^2}\bigr]}{I_\lambda}.
++\tag{40}
++$$
++
++Here $I_\lambda\to1$, $\arccos\lambda\to\pi/2$, and the second numerator term is $O(\lambda^3)$. Hence $D_\lambda\sim(\pi/2)\lambda^2$. The scalar calculation (33)--(36) proves (39). $\square$
++
++Theorem 2 and Proposition 5 establish the quadratic order of the worst local deficit over this uniformly bounded-Poincaré class. The sources in Proposition 5 depend on $\lambda$; Theorem 4 supplies the separate obstruction for a single fixed source. Neither result identifies the sharp universal multiplicative constant.
++
++For each fixed $\lambda$, the density in Proposition 5 is positive and bounded, with ratio $\kappa_\lambda=1/\lambda$. Thus Corollary 3 gives $C=2e/\lambda$ and a contraction deficit of order $\lambda^2$ for this family, consistently with (39). Its linear-in-$\lambda$ conclusion applies when the density ratio is held fixed.
++
+ ## 7. Numerical checks and reproducibility
+ 
+ The analytic arguments above do not use numerical evidence. The accompanying Python code checks their identities and asymptotics independently by quadrature. It treats the uniform source on $[-1,1]$ and the density (31), with a two-atom target, over 180 combinations of regularisation and nonzero potential. It also follows ten actual nonzero Sinkhorn trajectories. Stable paired formulas for the gap, substitutions $x=\lambda u$, and normalisation by the potential or its square avoid cancellation at small gaps.
+@@ -531,25 +601,25 @@
+ $$
+ D_\lambda=\lambda\tanh(1/\lambda),\qquad
+ \text{local gap factor}=(1-\lambda\tanh(1/\lambda))^2.
+-\tag{38}
+-$$
+-
+-For the cusp source, quadrature gives $D_{0.1}=0.0647035371183$, $D_{0.01}=0.00179454249623$, and $D_{0.001}=0.0000353004893444$. These numbers are floating-point checks, not interval certificates. The source normalisation was $0.9999999999999997$ in the recorded run. The checked global error-bound ratios remained below one; the largest were approximately $0.79150$ for the uniform source and $0.52720$ for the cusp source.
+-
+-The initial numerical implementation exposed a cancellation-sensitive tiny-gap discrepancy. The final script evaluates scaled integrands before quadrature. The verification record preserves that correction and the final environment, tolerances, counts and output. A complementary test with a Gaussian source, a bounded sine cost and five target atoms checks the noncompact-source and multiple-target setting; its exact scope is recorded separately. Numerical discretisation of a source is only a check of the continuous formulas, not a claim that the discrete measure satisfies (6).
+-
+-![Local contraction deficits. The uniform source has a linear deficit; the fixed cusp approaches a quadratic power with a logarithmic correction. The figure evaluates the exact scalar derivative, rather than fitting a rate from a short trajectory.](figures/sharpness_plot.png){width=92%}
++\tag{41}
++$$
++
++For the cusp source, quadrature gives $D_{0.1}=0.0647035371183$, $D_{0.01}=0.00179454249623$, and $D_{0.001}=0.0000353004893444$. These numbers are floating-point checks, not interval certificates. The source normalisation agreed with one to within $3\times10^{-16}$ in the recorded run. The checked global error-bound ratios remained below one; the largest were approximately $0.79150$ for the uniform source and $0.52720$ for the cusp source.
++
++The initial numerical implementation exposed a cancellation-sensitive tiny-gap discrepancy. The final script evaluates scaled integrands before quadrature. The verification record preserves that correction and the final environment, tolerances, counts and output. A complementary test with a Gaussian source, a bounded sine cost and five target atoms checks the noncompact-source and multiple-target setting; its exact scope is recorded separately. The two programmes do not numerically test the varying-source family of Proposition 5, whose verification is analytic. Numerical discretisation of a source is only a check of the continuous formulas, not a claim that the discrete measure satisfies (6).
++
++![Local contraction deficits, with $r_\lambda=1-D_\lambda$. The uniform source has a linear deficit; the fixed cusp approaches a quadratic power with a logarithmic correction. The figure evaluates the exact scalar derivative.](figures/sharpness_plot.png){width=82%}
+ 
+ ## 8. Prior work, scope, and unresolved questions
+ 
+ The ingredients and the new quantitative deductions should be distinguished.
+ 
+ * **Existing geometry.** Convex-conjugate Hessian inversion and relative smoothness are established optimisation tools; see Maddison et al. (2021). Aubin-Frankowski et al. (2022, Proposition 7) already compare joint and marginal relative entropy for entropic plans. Xu and Chen (2026) use dual-relative geometry for finite Sinkhorn problems. Theorem 1 gives a self-contained finite-partition implementation suitable for the constants used here; it does not claim to invent that geometry.
+-* **Existing qualitative overlap.** The transport-inequality route through Bobkov et al. (2001) and Chiarini et al. (2025) overlaps the compact, sufficiently smooth one-Poincaré setting. That deduction does not supply the coefficient $C_PL^2$ in (22) or the first-derivative-only, bounded-cost result on a potentially unbounded source domain.
++* **Existing qualitative overlap.** The transport-inequality route through Bobkov et al. (2001) and Chiarini et al. (2025) overlaps sufficiently smooth one-Poincaré settings, including some unbounded supports. For globally Lipschitz costs with bounded Hessians, a quadratic semiconcavity estimate at short distances and a Lipschitz estimate at long distances match the quadratic-linear transport cost. This is a deduction from those papers, not a theorem located there verbatim. It does not provide the direct $C_PL^2$ estimate under only the first-source-derivative hypothesis used here.
+ * **Existing curvature, stronger consequence.** Corollary 3 uses CDV's curvature estimate unchanged. The global $C/(C+\lambda)$ consequence is the claimed strengthening. It avoids the interpolation loss discussed in their Remark 5.2.
+ * **Conditional expectations.** Srinivasan and Slotine (2026) formulate related conditional-expectation and spectral-gap structures for a continuous-time flow. Equation (26) supplies a uniform geometric bound, while Theorem 1 turns it into a discrete-iteration guarantee.
+ 
+-The search was conducted on 1 November 2026 using web search, arXiv full text, publisher pages, proceedings and citation-linked sources. No earlier statement of the exact global bounds or the fixed logarithmic-cusp obstruction was found within that recorded boundary. This is not a proof of historical priority. The separate novelty report records queries, inspected formulas, indirect overlaps and unavailable evidence.
++The search was conducted on 1 November 2026 using web search, arXiv full text, publisher pages, proceedings and citation-linked sources. No earlier statement of the exact global bounds or the explicit sharpness constructions was found within that recorded boundary. This is not a proof of historical priority. CDV reports an earlier two-marginal Poincaré result announced by Simone Di Marino. A public Simons Institute seminar abstract dated 10 November 2021 also announces polynomial rates and counterexamples, without giving the formulas. Those proof details were not available in the inspected record and remain a material priority uncertainty. The separate novelty report records queries, inspected formulas, indirect overlaps and unavailable evidence.
+ 
+ The theorem leaves several substantive questions open. The sharp multiplicative constant and exact worst fixed-source rate are not established. Unbounded costs require additional domain and integrability arguments. A finite empirical source does not inherit the required gradient inequality; an appropriate graph inequality would require a separate discrete proof. Finally, a computable stopping rule needs certified integration error and a defensible source Poincaré constant. These limitations do not alter the exact bounded-cost statements proved above.
+ 
+@@ -572,3 +642,7 @@
+ ### Functional inequalities
+ 
+ Bobkov, S. G., Gentil, I., & Ledoux, M. (2001). Hypercontractivity of Hamilton--Jacobi equations. *Journal de Mathématiques Pures et Appliquées, 80*(7), 669--696. https://doi.org/10.1016/S0021-7824(01)01208-9
++
++### Public announcement relevant to priority
++
++Simons Institute for the Theory of Computing. (2021, November 10). *GMOS weekly seminar: The speed of Sinkhorn algorithm meets Poincaré inequality* [Seminar abstract]. https://simons.berkeley.edu/events/gmos-weekly-seminar-speed-sinkhorn-algorithm-meets-poincare-inequality

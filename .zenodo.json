@@ -1,0 +1,145 @@
+{
+  "title": "Curvature, relative entropy, and global Sinkhorn convergence",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> In one sentence: one Poincar&eacute; inequality on the source measure makes every full iteration of the exact continuous Sinkhorn algorithm shrink the entropic dual gap by the fixed factor C<sub>P</sub>L<sup>2</sup>/(C<sub>P</sub>L<sup>2</sup>+&lambda;<sup>2</sup>), from the first step and for any target, so about (C<sub>P</sub>L<sup>2</sup>/&lambda;<sup>2</sup>) log(1/&epsilon;) iterations suffice; the exponent 2 cannot be improved in general.</p><p>Sinkhorn's algorithm (matrix scaling, iterative proportional fitting) is the standard solver for entropy-regularised optimal transport; smaller regularisation &lambda; approximates unregularised transport better but slows the algorithm. Here C<sub>P</sub> is the source Poincar&eacute; constant and L bounds the source gradients of the cost. Theorem 1 transfers a uniform curvature bound on the semidual objective into a global relative-entropy inequality; Theorem 2 gives the Poincar&eacute; rate; Theorem 3 and Corollary 4 extend it to unbounded costs with compactly supported targets, including quadratic or bilinear cost with Gaussian or exponential-tailed sources and point-cloud targets (L becomes the target's Chebyshev radius R), for every &lambda;. Corollary 5 turns the curvature estimate of Chizat, Delalande and Va&scaron;kevi&ccaron;ius (CDV) into a global factor C/(C+&lambda;), about 1/&lambda; iterations, in their bounded-density and log-concave settings. Theorem 6 shows that no exponent below 2 is possible for a fixed source; Proposition 7 attains order &lambda;<sup>2</sup> uniformly over a bounded Poincar&eacute; class, Proposition 8 shows no single fixed absolutely continuous source attains it, and Corollary 9 shows the &lambda;<sup>2</sup> exponent of the Talagrand-inequality rates is also sharp. A practical stopping certificate bounds the gap by (1 + B/&lambda;<sup>2</sup>) times the observed dual increase. Remark 5.2 states a conjecture on the eventual factor.</p><p>Relation to prior work: Chiarini, Conforti, Greco and Tamanini (CCGT) already obtained the same rational rate under the stronger Talagrand inequality and Hessian bounds; the gains here are the weaker inequality, first-derivative hypotheses, validity for every &lambda; and bounded initial potential, unbounded costs with compact targets, and the sharpness results. The mirror-descent route from a reverse-entropy inequality to a linear rate is that of Aubin-Frankowski, Korba and L&eacute;ger; the curvature estimate in Corollary 5 is CDV's. S. Di Marino announced &lambda;<sup>2</sup> rates under Poincar&eacute; inequalities on both marginals; those proofs could not be inspected, so priority for the exponent is uncertain.</p><p>The archive contains the manuscript (PDF and Markdown source), the proof outline, three floating-point check programmes with their outputs, a figure, earlier manuscript versions and diffs, the bibliography, the dated literature audit, a rating-free internal review summary, CI and SHA-256 sums. Assurance: written proofs; the scripts are floating-point checks of selected formulas, not proofs or interval certificates; internal AI-assisted review only (not peer review, independent reproduction or formal verification). Limits: exact algorithm on population (continuous) measures only, not empirical sources; unbounded targets with quadratic cost are not covered; constants are not sharp. Creator: Anonymous. Text and figures CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-zero",
+  "version": "0.1.0-candidate",
+  "publication_date": "2026-11-03",
+  "keywords": [
+    "Sinkhorn algorithm",
+    "entropic optimal transport",
+    "Poincaré inequality",
+    "convergence rate",
+    "matrix scaling",
+    "iterative proportional fitting",
+    "relative entropy",
+    "mirror descent",
+    "Schrödinger bridge"
+  ],
+  "notes": "Code (the .py files and the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/poincare-sinkhorn-global-rates/tree/v0.1.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/poincare-sinkhorn-global-rates/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.52202/068431-1255",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s004400050090",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/S0021-7824(01)01208-9",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1137/21M1410634",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/08-AIHP309",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10107-025-02242-z",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10915-020-01325-7",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00440-025-01366-9",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/0024-3795(89)90490-4",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/moor.2024.0427",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/09-AIHP209",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.2307/2374298",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/07-AIHP200",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00245-020-09697-w",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1137/19M130858X",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.4064/sm-44-1-31-38",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.jfa.2006.10.002",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1561/2200000073",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/BF02024507",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/aoms/1177703591",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.2140/pjm.1967.21.343",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "doi": "10.5281/zenodo.23929617"
+}

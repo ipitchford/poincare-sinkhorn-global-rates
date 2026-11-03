@@ -1,0 +1,93 @@
+target_id: one-marginal-poincare-sinkhorn
+search_date: 2026-11-01
+revision_date: 2026-11-03
+intended_contribution_unit: theorem
+claim:
+  exact_statement: |
+    Let the source mu on a connected open X in R^d satisfy
+    Var_mu f <= C_P int |grad f|^2 dmu, and let the cost be C^1 in the
+    source variable with, for every x, {grad_x c(x,y): y} contained in a
+    ball of radius L. Under integrability conditions (S1)-(S3) (automatic
+    for bounded costs), exact full Sinkhorn iterations satisfy
+    delta_(t+1) <= B/(B+lambda^2) delta_t, B = C_P L^2, from every bounded
+    initial potential, where delta is the entropic semidual objective gap;
+    this follows from the error bound delta(psi) <= (lambda+B/lambda) KL(nu || nu[psi]).
+    If the target is compactly supported and the cost is Lipschitz in y
+    with constant of linear growth in |x| (e.g. quadratic or bilinear cost),
+    (S1)-(S3) hold for every lambda>0; for quadratic cost the factor is
+    C_P R^2/(C_P R^2+lambda^2), R the Chebyshev radius of the target, for
+    every Poincare source on R^d (including two-sided exponential sources,
+    which satisfy no Talagrand inequality).
+    More generally, a uniform tilted Hessian bound Phi'' >= A^-1 Var_nu[psi]
+    for every bounded potential implies delta <= A KL(nu||nu[psi]) and the
+    reverse entropy bound KL(gamma_eta||gamma_psi) <= (A/lambda)
+    KL(nu[eta]||nu[psi]). Under CDV assumption (A) with (A1), (A2) or (A3),
+    the CDV curvature bound gives the global factor C/(C+lambda), with
+    C = e(c_inf + xi R_X^2/2) kappa under (A1) and C = e max{c_inf,1}
+    under (A2)/(A3) (CDV's e c_inf when xi=0 or c_inf>=1).
+    In the two-atom bilinear model on (-1,1): the fixed density
+    (2/5)|x| log^2(e/|x|) has C_P <= 3/4 and local dual-gap deficit
+    asymptotic to (8/5) log(2) lambda^2 log^2(1/lambda), so no eventual
+    rate 1-K lambda^beta with beta<2 holds; the family proportional to
+    min{lambda cosh(x/lambda),1} has C_P <= 1+pi/2 and deficit ~ pi lambda^2;
+    no fixed Poincare density has local deficit of order lambda^2
+    (deficit/lambda^2 -> infinity); all these sources satisfy a Talagrand
+    inequality with a lambda-uniform constant, so the lambda^2 exponent of
+    CCGT Proposition 1.9(i) is sharp.
+  exclusions:
+    - No claim to have identified the objectively most important open problem.
+    - No assertion of first historical priority from negative search evidence; an earlier announcement (Di Marino) of lambda^2 rates under two Poincare marginals could not be inspected.
+    - No claim for unbounded targets with quadratic cost (e.g. Gaussian to Gaussian).
+    - No claim of the Euclidean Poincare inequality for empirical source measures.
+    - No claim that the contraction constant is sharp; the eventual factor (B/(B+lambda^2))^2 is conjectural.
+    - No linear-in-lambda bound for the full Poincare class; bounded density on non-convex domains is left open.
+    - No claim that convergence for non-Talagrand Poincare sources is new (CCGT Theorem 1.4 covers generalised transport inequalities); the claim is the explicit factor for all lambda and bounded initialisations.
+    - No numerical experiment is a proof of an unrestricted theorem.
+source:
+  originating_reference: Chizat, Delalande and Vaskevicius (online 2025; issue 2026), Remark 3.1
+  url: https://doi.org/10.1007/s10107-025-02242-z
+normalisation:
+  regularisation: lambda times KL(coupling || mu tensor nu)
+  iteration: one target-to-source transform and one source-to-target transform
+  gap: E(psi*) minus E(psi), evaluated after source normalisation
+  entropy_direction: KL(target || current target marginal)
+  variance: variance under current tilted target marginal, not fixed nu
+  symmetries:
+    - Addition of constants to potentials
+    - Addition of source-only or target-only terms to the cost
+    - Joint scaling of c and lambda
+sequences:
+  - name: uniform-source local eigenvalue
+    exact_values:
+      - 1-(1/2)*tanh(2)
+      - 1-(1/4)*tanh(4)
+      - 1-(1/8)*tanh(8)
+    natural_scalings: lambda = 1/2, 1/4, 1/8
+generating_functions: []
+matrices:
+  - name: binary alternating-conditional operator
+    entries:
+      - ['1-d/2', 'd/2']
+      - ['d/2', '1-d/2']
+    parameter: d=int sech^2(x/lambda) dmu(x)
+  - name: covariance on a three-cell partition
+    entries:
+      - ['r1*(1-r1)', '-r1*r2', '-r1*r3']
+      - ['-r1*r2', 'r2*(1-r2)', '-r2*r3']
+      - ['-r1*r3', '-r2*r3', 'r3*(1-r3)']
+aliases:
+  analysis: [Poincare inequality, strong concavity of entropic Kantorovich functional, spectral gap]
+  probability: [conditional variance, maximal correlation, alternating Gibbs operator, reverse data processing]
+  combinatorics: [matrix scaling, iterative proportional fitting]
+  mathematical_physics: [Schrodinger system, entropic bridge, two-block Gibbs sampling]
+  statistics_optimisation_ml: [Sinkhorn, relative smoothness, convex conjugacy, entropy error bound, dual PL inequality]
+known_invariants:
+  quotient: constants are the only null direction for each finite positive partition
+  binary_spectrum: [1, 1-d]
+  binary_trace: 2-d
+  binary_determinant: 1-d
+  binary_row_sums: 1
+  cost_units: C_P*L^2 and lambda^2 have equal units
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [web search, arXiv, publisher full text, NeurIPS proceedings, Evidence Press catalogue]

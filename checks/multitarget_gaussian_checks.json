@@ -1,0 +1,1107 @@
+{
+  "scope": "Floating-point Gauss--Hermite approximation, not a proof.",
+  "source": "N(0,1)",
+  "cost": "sin(x)*y",
+  "C_P": 1.0,
+  "L": 1.0,
+  "target_points": [
+    -1.0,
+    -0.2,
+    0.3,
+    0.8,
+    1.0
+  ],
+  "target_weights": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "resolutions": [
+    4096,
+    16384
+  ],
+  "lambda_values": [
+    0.5,
+    0.2,
+    0.1
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "runs": [
+    {
+      "nodes": 4096,
+      "lambda": 0.5,
+      "quadrature_normalisation": 1.0000000000000002,
+      "optimum_potential": [
+        -0.512815922053188,
+        -0.0325924278107909,
+        0.11660168922304319,
+        0.09198347558558875,
+        0.032847498786438764
+      ],
+      "optimum_objective": 0.13734362279879014,
+      "optimum_marginal_residual": 1.1102230246251565e-16,
+      "optimum_update_error": 2.220446049250313e-16,
+      "root_solver_success_flag": true,
+      "cases": [
+        {
+          "potential_index": 0,
+          "potential": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dual_gap": 0.030107280578492462,
+          "marginal_kl": 0.04637348718196324,
+          "global_error_bound_ratio": 0.2596939105343154,
+          "next_dual_gap": 0.002188589644177813,
+          "gap_contraction_ratio": 0.07269303643920803,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.18587692302697556,
+          "relative_hessian_min_eigenvalue": 0.1596551494849431,
+          "descent_bound_ratio": 0.8305096985218233
+        },
+        {
+          "potential_index": 1,
+          "potential": [
+            -0.39,
+            0.11000000000000001,
+            0.010000000000000009,
+            -0.29000000000000004,
+            0.31000000000000005
+          ],
+          "dual_gap": 0.059727431518545676,
+          "marginal_kl": 0.11883497086454094,
+          "global_error_bound_ratio": 0.20104328240759536,
+          "next_dual_gap": 1.0701953275960019e-05,
+          "gap_contraction_ratio": 0.00017917986767331534,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.14812479190475966,
+          "relative_hessian_min_eigenvalue": 0.12668438642492025,
+          "descent_bound_ratio": 0.9949889396961671
+        },
+        {
+          "potential_index": 2,
+          "potential": [
+            0.72,
+            -0.38,
+            0.32,
+            -0.58,
+            0.22
+          ],
+          "dual_gap": 0.277540483943983,
+          "marginal_kl": 0.4637310405526277,
+          "global_error_bound_ratio": 0.2393978057740007,
+          "next_dual_gap": 0.015085740409464532,
+          "gap_contraction_ratio": 0.05435509874123207,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.26527557717417305,
+          "relative_hessian_min_eigenvalue": 0.05861712096921227,
+          "descent_bound_ratio": 0.8834495317316241
+        },
+        {
+          "potential_index": 3,
+          "potential": [
+            -1.25,
+            -0.75,
+            -0.25,
+            0.25,
+            0.75
+          ],
+          "dual_gap": 0.2265054762472834,
+          "marginal_kl": 0.3636808168235851,
+          "global_error_bound_ratio": 0.24912556920169593,
+          "next_dual_gap": 0.013200524709994749,
+          "gap_contraction_ratio": 0.058279053242771515,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.043851545559578056,
+          "relative_hessian_min_eigenvalue": 0.04710311438410314,
+          "descent_bound_ratio": 0.8524903294615003
+        },
+        {
+          "potential_index": 4,
+          "potential": [
+            0.12000000000000001,
+            0.12000000000000001,
+            -0.48000000000000004,
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dual_gap": 0.0951639082139856,
+          "marginal_kl": 0.17487906774841966,
+          "global_error_bound_ratio": 0.21766792204287827,
+          "next_dual_gap": 0.002178109667777456,
+          "gap_contraction_ratio": 0.02288798041879236,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.2117402224177249,
+          "relative_hessian_min_eigenvalue": 0.09403065534634297,
+          "descent_bound_ratio": 0.9403536372358822
+        },
+        {
+          "potential_index": 5,
+          "potential": [
+            -0.5368159220531881,
+            -0.001592427810790914,
+            0.07260168922304316,
+            0.09298347558558875,
+            0.053847498786438755
+          ],
+          "dual_gap": 0.0006925070587621707,
+          "marginal_kl": 0.001355363721162101,
+          "global_error_bound_ratio": 0.20437526781915305,
+          "next_dual_gap": 4.36480799340111e-06,
+          "gap_contraction_ratio": 0.00630290758509095,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.12416166646221707,
+          "relative_hessian_min_eigenvalue": 0.1300674011381782,
+          "descent_bound_ratio": 0.9847990874328192
+        }
+      ],
+      "trajectory_steps": 20,
+      "final_marginal_residual": 6.712408406883696e-13,
+      "max_trajectory_gap_ratio_above_1e-9": 0.10932396429124919,
+      "trajectory": [
+        {
+          "step": 0,
+          "gap": 0.059727431518545676,
+          "marginal_residual": 0.1597550695362785
+        },
+        {
+          "step": 1,
+          "gap": 1.0701953275960019e-05,
+          "marginal_residual": 0.0020920828869469
+        },
+        {
+          "step": 2,
+          "gap": 4.3926182136111436e-07,
+          "marginal_residual": 0.00032802437793455486
+        },
+        {
+          "step": 5,
+          "gap": 5.68544322732123e-10,
+          "marginal_residual": 1.0868265724994775e-05
+        },
+        {
+          "step": 10,
+          "gap": 8.854028621385623e-15,
+          "marginal_residual": 4.29533338897059e-08
+        },
+        {
+          "step": 20,
+          "gap": 0.0,
+          "marginal_residual": 6.712408406883696e-13
+        }
+      ]
+    },
+    {
+      "nodes": 4096,
+      "lambda": 0.2,
+      "quadrature_normalisation": 1.0000000000000002,
+      "optimum_potential": [
+        -0.7121099704577667,
+        -0.09261400893861808,
+        0.1526504242352019,
+        0.14635984765201893,
+        0.059943505421747575
+      ],
+      "optimum_objective": 0.22362815600401859,
+      "optimum_marginal_residual": 4.0717429428127616e-14,
+      "optimum_update_error": 5.435929484320923e-14,
+      "root_solver_success_flag": true,
+      "cases": [
+        {
+          "potential_index": 0,
+          "potential": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dual_gap": 0.10458030375563615,
+          "marginal_kl": 0.2602515328449104,
+          "global_error_bound_ratio": 0.077277534761222,
+          "next_dual_gap": 0.029778428668967738,
+          "gap_contraction_ratio": 0.2847422277386806,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.1582486852392243,
+          "relative_hessian_min_eigenvalue": 0.21725264205060557,
+          "descent_bound_ratio": 0.6958422701125412
+        },
+        {
+          "potential_index": 1,
+          "potential": [
+            -0.39,
+            0.11000000000000001,
+            0.010000000000000009,
+            -0.29000000000000004,
+            0.31000000000000005
+          ],
+          "dual_gap": 0.13747646078191827,
+          "marginal_kl": 0.6530900363573672,
+          "global_error_bound_ratio": 0.040481066082491975,
+          "next_dual_gap": 0.0014270952729063813,
+          "gap_contraction_ratio": 0.010380651820606669,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.11881684411839,
+          "relative_hessian_min_eigenvalue": 0.08685769921117954,
+          "descent_bound_ratio": 0.9600780333137335
+        },
+        {
+          "potential_index": 2,
+          "potential": [
+            0.72,
+            -0.38,
+            0.32,
+            -0.58,
+            0.22
+          ],
+          "dual_gap": 0.5146583156602607,
+          "marginal_kl": 1.7514835440850227,
+          "global_error_bound_ratio": 0.056507954839673975,
+          "next_dual_gap": 0.10275674916042488,
+          "gap_contraction_ratio": 0.19966013573218408,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.18497832785601354,
+          "relative_hessian_min_eigenvalue": 0.00700488465273915,
+          "descent_bound_ratio": 0.8504379135861924
+        },
+        {
+          "potential_index": 3,
+          "potential": [
+            -1.25,
+            -0.75,
+            -0.25,
+            0.25,
+            0.75
+          ],
+          "dual_gap": 0.31300501053396074,
+          "marginal_kl": 1.0251074737751484,
+          "global_error_bound_ratio": 0.05871898585897342,
+          "next_dual_gap": 0.059319169360862456,
+          "gap_contraction_ratio": 0.18951507919847305,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.009693161509046422,
+          "relative_hessian_min_eigenvalue": 0.054650570558614324,
+          "descent_bound_ratio": 0.8081708218596904
+        },
+        {
+          "potential_index": 4,
+          "potential": [
+            0.12000000000000001,
+            0.12000000000000001,
+            -0.48000000000000004,
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dual_gap": 0.20997951296621647,
+          "marginal_kl": 0.763431842573977,
+          "global_error_bound_ratio": 0.05289362234915336,
+          "next_dual_gap": 0.030887372960517245,
+          "gap_contraction_ratio": 0.14709707877780773,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.17051818864217783,
+          "relative_hessian_min_eigenvalue": 0.02444784127742275,
+          "descent_bound_ratio": 0.8525576192787494
+        },
+        {
+          "potential_index": 5,
+          "potential": [
+            -0.7361099704577667,
+            -0.06161400893861809,
+            0.10865042423520188,
+            0.14735984765201893,
+            0.08094350542174758
+          ],
+          "dual_gap": 0.0016128211856051844,
+          "marginal_kl": 0.0076652964151100325,
+          "global_error_bound_ratio": 0.040462612730448086,
+          "next_dual_gap": 2.4431985997802608e-05,
+          "gap_contraction_ratio": 0.015148601851131384,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.07680464327870587,
+          "relative_hessian_min_eigenvalue": 0.24370547559124703,
+          "descent_bound_ratio": 0.9651660206459151
+        }
+      ],
+      "trajectory_steps": 55,
+      "final_marginal_residual": 8.790745908981989e-13,
+      "max_trajectory_gap_ratio_above_1e-9": 0.42281609154385075,
+      "trajectory": [
+        {
+          "step": 0,
+          "gap": 0.13747646078191827,
+          "marginal_residual": 0.25949735689392955
+        },
+        {
+          "step": 1,
+          "gap": 0.0014270952729063813,
+          "marginal_residual": 0.025383326117315946
+        },
+        {
+          "step": 2,
+          "gap": 0.00023121168095743827,
+          "marginal_residual": 0.008030076777100131
+        },
+        {
+          "step": 5,
+          "gap": 1.5653881395349956e-05,
+          "marginal_residual": 0.0020777569692474462
+        },
+        {
+          "step": 10,
+          "gap": 2.0951982265815516e-07,
+          "marginal_residual": 0.00024270254659397583
+        },
+        {
+          "step": 20,
+          "gap": 3.713571117280878e-11,
+          "marginal_residual": 3.2327020209610424e-06
+        },
+        {
+          "step": 50,
+          "gap": 2.7755575615628914e-17,
+          "marginal_residual": 7.619682662607374e-12
+        }
+      ]
+    },
+    {
+      "nodes": 4096,
+      "lambda": 0.1,
+      "quadrature_normalisation": 1.0000000000000002,
+      "optimum_potential": [
+        -0.7948955748110547,
+        -0.12483838768737737,
+        0.15295434786288165,
+        0.17589115781176567,
+        0.07883885536231444
+      ],
+      "optimum_objective": 0.27755576042068464,
+      "optimum_marginal_residual": 1.1102230246251565e-16,
+      "optimum_update_error": 5.551115123125783e-17,
+      "root_solver_success_flag": true,
+      "cases": [
+        {
+          "potential_index": 0,
+          "potential": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dual_gap": 0.1545189276395118,
+          "marginal_kl": 0.5342276296031876,
+          "global_error_bound_ratio": 0.028637425095456075,
+          "next_dual_gap": 0.07276994538570158,
+          "gap_contraction_ratio": 0.4709451877343581,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.10065695136535824,
+          "relative_hessian_min_eigenvalue": 0.2343861491626811,
+          "descent_bound_ratio": 0.6534975908868735
+        },
+        {
+          "potential_index": 1,
+          "potential": [
+            -0.39,
+            0.11000000000000001,
+            0.010000000000000009,
+            -0.29000000000000004,
+            0.31000000000000005
+          ],
+          "dual_gap": 0.18930661311350144,
+          "marginal_kl": 1.703298735465016,
+          "global_error_bound_ratio": 0.011004076167544202,
+          "next_dual_gap": 0.008196582770253091,
+          "gap_contraction_ratio": 0.04329792095186191,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.07493259074893296,
+          "relative_hessian_min_eigenvalue": 0.007810281203064589,
+          "descent_bound_ratio": 0.9404773066609526
+        },
+        {
+          "potential_index": 2,
+          "potential": [
+            0.72,
+            -0.38,
+            0.32,
+            -0.58,
+            0.22
+          ],
+          "dual_gap": 0.6181429094282332,
+          "marginal_kl": 3.851176265411729,
+          "global_error_bound_ratio": 0.015891837724980883,
+          "next_dual_gap": 0.18157724666222486,
+          "gap_contraction_ratio": 0.29374638759535276,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.10662953290995114,
+          "relative_hessian_min_eigenvalue": 8.594201428147815e-05,
+          "descent_bound_ratio": 0.882152810876446
+        },
+        {
+          "potential_index": 3,
+          "potential": [
+            -1.25,
+            -0.75,
+            -0.25,
+            0.25,
+            0.75
+          ],
+          "dual_gap": 0.35570022950714164,
+          "marginal_kl": 2.0958782466878225,
+          "global_error_bound_ratio": 0.01680338281162724,
+          "next_dual_gap": 0.10202805724877417,
+          "gap_contraction_ratio": 0.28683719825017906,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.0021624593196431746,
+          "relative_hessian_min_eigenvalue": 0.020466951215067388,
+          "descent_bound_ratio": 0.8262152793618809
+        },
+        {
+          "potential_index": 4,
+          "potential": [
+            0.12000000000000001,
+            0.12000000000000001,
+            -0.48000000000000004,
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dual_gap": 0.27069403584090135,
+          "marginal_kl": 1.654553456407244,
+          "global_error_bound_ratio": 0.016198563777694706,
+          "next_dual_gap": 0.07464413847694273,
+          "gap_contraction_ratio": 0.27575095345216377,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.10378695307328759,
+          "relative_hessian_min_eigenvalue": 0.0012678449407473825,
+          "descent_bound_ratio": 0.8439450765616231
+        },
+        {
+          "potential_index": 5,
+          "potential": [
+            -0.8188955748110547,
+            -0.09383838768737737,
+            0.10895434786288163,
+            0.17689115781176568,
+            0.09983885536231443
+          ],
+          "dual_gap": 0.002849473468574004,
+          "marginal_kl": 0.025104964939337473,
+          "global_error_bound_ratio": 0.011237860187382981,
+          "next_dual_gap": 9.004258264477816e-05,
+          "gap_contraction_ratio": 0.0315997266294391,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.04576613285409222,
+          "relative_hessian_min_eigenvalue": 0.2904065911432507,
+          "descent_bound_ratio": 0.9097877778838983
+        }
+      ],
+      "trajectory_steps": 116,
+      "final_marginal_residual": 8.791301020494302e-13,
+      "max_trajectory_gap_ratio_above_1e-9": 0.659870068165241,
+      "trajectory": [
+        {
+          "step": 0,
+          "gap": 0.18930661311350144,
+          "marginal_residual": 0.2821629967125248
+        },
+        {
+          "step": 1,
+          "gap": 0.008196582770253091,
+          "marginal_residual": 0.07177638151137858
+        },
+        {
+          "step": 2,
+          "gap": 0.002358081570234649,
+          "marginal_residual": 0.03742486681381893
+        },
+        {
+          "step": 5,
+          "gap": 0.00039107761901241433,
+          "marginal_residual": 0.00938342717592583
+        },
+        {
+          "step": 10,
+          "gap": 4.8542861206202215e-05,
+          "marginal_residual": 0.0038295600780647865
+        },
+        {
+          "step": 20,
+          "gap": 7.418066536590828e-07,
+          "marginal_residual": 0.0004779296958071777
+        },
+        {
+          "step": 50,
+          "gap": 2.5758284394328257e-12,
+          "marginal_residual": 8.913866277326932e-07
+        },
+        {
+          "step": 100,
+          "gap": 0.0,
+          "marginal_residual": 2.5124069491511136e-11
+        }
+      ]
+    },
+    {
+      "nodes": 16384,
+      "lambda": 0.5,
+      "quadrature_normalisation": 1.0000000000000007,
+      "optimum_potential": [
+        -0.5128159220531578,
+        -0.03259242781078417,
+        0.1166016892230361,
+        0.09198347558558122,
+        0.03284749878643628
+      ],
+      "optimum_objective": 0.13734362279878187,
+      "optimum_marginal_residual": 7.216449660063518e-16,
+      "optimum_update_error": 8.951173136040325e-16,
+      "root_solver_success_flag": true,
+      "cases": [
+        {
+          "potential_index": 0,
+          "potential": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dual_gap": 0.03010728057848852,
+          "marginal_kl": 0.04637348718195667,
+          "global_error_bound_ratio": 0.25969391053431823,
+          "next_dual_gap": 0.002188589644177452,
+          "gap_contraction_ratio": 0.07269303643920556,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.18587692302696018,
+          "relative_hessian_min_eigenvalue": 0.15965514948494958,
+          "descent_bound_ratio": 0.8305096985218121
+        },
+        {
+          "potential_index": 1,
+          "potential": [
+            -0.39,
+            0.11000000000000001,
+            0.010000000000000009,
+            -0.29000000000000004,
+            0.31000000000000005
+          ],
+          "dual_gap": 0.059727431518544205,
+          "marginal_kl": 0.11883497086453734,
+          "global_error_bound_ratio": 0.2010432824075965,
+          "next_dual_gap": 1.070195327601553e-05,
+          "gap_contraction_ratio": 0.00017917986767424917,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.14812479190474775,
+          "relative_hessian_min_eigenvalue": 0.1266843864249203,
+          "descent_bound_ratio": 0.9949889396961624
+        },
+        {
+          "potential_index": 2,
+          "potential": [
+            0.72,
+            -0.38,
+            0.32,
+            -0.58,
+            0.22
+          ],
+          "dual_gap": 0.2775404839439738,
+          "marginal_kl": 0.46373104055261594,
+          "global_error_bound_ratio": 0.2393978057739988,
+          "next_dual_gap": 0.015085740409462617,
+          "gap_contraction_ratio": 0.05435509874122698,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.2652755771741383,
+          "relative_hessian_min_eigenvalue": 0.05861712096921464,
+          "descent_bound_ratio": 0.8834495317316263
+        },
+        {
+          "potential_index": 3,
+          "potential": [
+            -1.25,
+            -0.75,
+            -0.25,
+            0.25,
+            0.75
+          ],
+          "dual_gap": 0.22650547624728912,
+          "marginal_kl": 0.36368081682359626,
+          "global_error_bound_ratio": 0.2491255692016946,
+          "next_dual_gap": 0.01320052470999461,
+          "gap_contraction_ratio": 0.058279053242769434,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.043851545559576134,
+          "relative_hessian_min_eigenvalue": 0.047103114384100406,
+          "descent_bound_ratio": 0.852490329461503
+        },
+        {
+          "potential_index": 4,
+          "potential": [
+            0.12000000000000001,
+            0.12000000000000001,
+            -0.48000000000000004,
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dual_gap": 0.09516390821398024,
+          "marginal_kl": 0.17487906774841036,
+          "global_error_bound_ratio": 0.2176679220428776,
+          "next_dual_gap": 0.0021781096677771228,
+          "gap_contraction_ratio": 0.02288798041879015,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.21174022241770563,
+          "relative_hessian_min_eigenvalue": 0.09403065534634544,
+          "descent_bound_ratio": 0.9403536372358829
+        },
+        {
+          "potential_index": 5,
+          "potential": [
+            -0.5368159220531579,
+            -0.0015924278107841703,
+            0.07260168922303609,
+            0.09298347558558122,
+            0.053847498786436285
+          ],
+          "dual_gap": 0.0006925070587622262,
+          "marginal_kl": 0.001355363721161805,
+          "global_error_bound_ratio": 0.20437526781921406,
+          "next_dual_gap": 4.364807993428865e-06,
+          "gap_contraction_ratio": 0.006302907585130525,
+          "theoretical_contraction_factor": 0.8,
+          "conditional_variance_bound_ratio": 0.12416166646221129,
+          "relative_hessian_min_eigenvalue": 0.13006740113817836,
+          "descent_bound_ratio": 0.9847990874325644
+        }
+      ],
+      "trajectory_steps": 20,
+      "final_marginal_residual": 6.716294187469884e-13,
+      "max_trajectory_gap_ratio_above_1e-9": 0.10932396429124919,
+      "trajectory": [
+        {
+          "step": 0,
+          "gap": 0.059727431518544205,
+          "marginal_residual": 0.15975506953628144
+        },
+        {
+          "step": 1,
+          "gap": 1.070195327601553e-05,
+          "marginal_residual": 0.0020920828869469
+        },
+        {
+          "step": 2,
+          "gap": 4.3926182136111436e-07,
+          "marginal_residual": 0.0003280243779353875
+        },
+        {
+          "step": 5,
+          "gap": 5.68544322732123e-10,
+          "marginal_residual": 1.0868265724717219e-05
+        },
+        {
+          "step": 10,
+          "gap": 8.881784197001252e-15,
+          "marginal_residual": 4.29533337786836e-08
+        },
+        {
+          "step": 20,
+          "gap": 2.7755575615628914e-17,
+          "marginal_residual": 6.716294187469884e-13
+        }
+      ]
+    },
+    {
+      "nodes": 16384,
+      "lambda": 0.2,
+      "quadrature_normalisation": 1.0000000000000007,
+      "optimum_potential": [
+        -0.7121099704577356,
+        -0.09261400893859975,
+        0.15265042423519654,
+        0.1463598476520067,
+        0.059943505421741816
+      ],
+      "optimum_objective": 0.22362815600400776,
+      "optimum_marginal_residual": 4.0717429428127616e-14,
+      "optimum_update_error": 5.4442561570056114e-14,
+      "root_solver_success_flag": true,
+      "cases": [
+        {
+          "potential_index": 0,
+          "potential": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dual_gap": 0.1045803037556231,
+          "marginal_kl": 0.2602515328448696,
+          "global_error_bound_ratio": 0.07727753476122447,
+          "next_dual_gap": 0.02977842866896452,
+          "gap_contraction_ratio": 0.2847422277386853,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.15824868523919422,
+          "relative_hessian_min_eigenvalue": 0.21725264205064812,
+          "descent_bound_ratio": 0.6958422701125235
+        },
+        {
+          "potential_index": 1,
+          "potential": [
+            -0.39,
+            0.11000000000000001,
+            0.010000000000000009,
+            -0.29000000000000004,
+            0.31000000000000005
+          ],
+          "dual_gap": 0.1374764607819126,
+          "marginal_kl": 0.6530900363573418,
+          "global_error_bound_ratio": 0.040481066082491884,
+          "next_dual_gap": 0.001427095272906076,
+          "gap_contraction_ratio": 0.010380651820604875,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.11881684411837659,
+          "relative_hessian_min_eigenvalue": 0.0868576992111856,
+          "descent_bound_ratio": 0.960078033313734
+        },
+        {
+          "potential_index": 2,
+          "potential": [
+            0.72,
+            -0.38,
+            0.32,
+            -0.58,
+            0.22
+          ],
+          "dual_gap": 0.5146583156602431,
+          "marginal_kl": 1.7514835440849932,
+          "global_error_bound_ratio": 0.056507954839673004,
+          "next_dual_gap": 0.10275674916041472,
+          "gap_contraction_ratio": 0.19966013573217115,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.18497832785596036,
+          "relative_hessian_min_eigenvalue": 0.007004884652740379,
+          "descent_bound_ratio": 0.8504379135861931
+        },
+        {
+          "potential_index": 3,
+          "potential": [
+            -1.25,
+            -0.75,
+            -0.25,
+            0.25,
+            0.75
+          ],
+          "dual_gap": 0.3130050105339708,
+          "marginal_kl": 1.0251074737751775,
+          "global_error_bound_ratio": 0.058718985858973644,
+          "next_dual_gap": 0.05931916936086529,
+          "gap_contraction_ratio": 0.189515079198476,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.009693161509045351,
+          "relative_hessian_min_eigenvalue": 0.05465057055861064,
+          "descent_bound_ratio": 0.8081708218596902
+        },
+        {
+          "potential_index": 4,
+          "potential": [
+            0.12000000000000001,
+            0.12000000000000001,
+            -0.48000000000000004,
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dual_gap": 0.20997951296620138,
+          "marginal_kl": 0.7634318425739252,
+          "global_error_bound_ratio": 0.05289362234915315,
+          "next_dual_gap": 0.030887372960514248,
+          "gap_contraction_ratio": 0.14709707877780404,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.1705181886421383,
+          "relative_hessian_min_eigenvalue": 0.024447841277426174,
+          "descent_bound_ratio": 0.8525576192787491
+        },
+        {
+          "potential_index": 5,
+          "potential": [
+            -0.7361099704577356,
+            -0.06161400893859975,
+            0.10865042423519652,
+            0.14735984765200671,
+            0.08094350542174181
+          ],
+          "dual_gap": 0.0016128211856051844,
+          "marginal_kl": 0.007665296415109508,
+          "global_error_bound_ratio": 0.040462612730450855,
+          "next_dual_gap": 2.4431985997747097e-05,
+          "gap_contraction_ratio": 0.015148601851096965,
+          "theoretical_contraction_factor": 0.9615384615384616,
+          "conditional_variance_bound_ratio": 0.07680464327870186,
+          "relative_hessian_min_eigenvalue": 0.2437054755912467,
+          "descent_bound_ratio": 0.9651660206458152
+        }
+      ],
+      "trajectory_steps": 55,
+      "final_marginal_residual": 8.788525462932739e-13,
+      "max_trajectory_gap_ratio_above_1e-9": 0.4228160915452344,
+      "trajectory": [
+        {
+          "step": 0,
+          "gap": 0.1374764607819126,
+          "marginal_residual": 0.25949735689394166
+        },
+        {
+          "step": 1,
+          "gap": 0.001427095272906076,
+          "marginal_residual": 0.02538332611731245
+        },
+        {
+          "step": 2,
+          "gap": 0.0002312116809572995,
+          "marginal_residual": 0.008030076777098855
+        },
+        {
+          "step": 5,
+          "gap": 1.565388139537771e-05,
+          "marginal_residual": 0.002077756969246336
+        },
+        {
+          "step": 10,
+          "gap": 2.0951982271366631e-07,
+          "marginal_residual": 0.0002427025465933097
+        },
+        {
+          "step": 20,
+          "gap": 3.713571117280878e-11,
+          "marginal_residual": 3.23270202085002e-06
+        },
+        {
+          "step": 50,
+          "gap": 0.0,
+          "marginal_residual": 7.619849196061068e-12
+        }
+      ]
+    },
+    {
+      "nodes": 16384,
+      "lambda": 0.1,
+      "quadrature_normalisation": 1.0000000000000007,
+      "optimum_potential": [
+        -0.7948955748110231,
+        -0.12483838768735539,
+        0.15295434786288037,
+        0.1758911578117503,
+        0.07883885536230656
+      ],
+      "optimum_objective": 0.27755576042067265,
+      "optimum_marginal_residual": 4.996003610813204e-16,
+      "optimum_update_error": 2.0816681711721685e-16,
+      "root_solver_success_flag": true,
+      "cases": [
+        {
+          "potential_index": 0,
+          "potential": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "dual_gap": 0.1545189276394915,
+          "marginal_kl": 0.5342276296028202,
+          "global_error_bound_ratio": 0.028637425095472003,
+          "next_dual_gap": 0.07276994538570514,
+          "gap_contraction_ratio": 0.47094518773444305,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.10065695136330338,
+          "relative_hessian_min_eigenvalue": 0.23438614916733644,
+          "descent_bound_ratio": 0.6534975908866151
+        },
+        {
+          "potential_index": 1,
+          "potential": [
+            -0.39,
+            0.11000000000000001,
+            0.010000000000000009,
+            -0.29000000000000004,
+            0.31000000000000005
+          ],
+          "dual_gap": 0.18930661311349395,
+          "marginal_kl": 1.703298735464965,
+          "global_error_bound_ratio": 0.011004076167544096,
+          "next_dual_gap": 0.008196582770251593,
+          "gap_contraction_ratio": 0.04329792095185571,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.07493259074892665,
+          "relative_hessian_min_eigenvalue": 0.007810281203066586,
+          "descent_bound_ratio": 0.9404773066609555
+        },
+        {
+          "potential_index": 2,
+          "potential": [
+            0.72,
+            -0.38,
+            0.32,
+            -0.58,
+            0.22
+          ],
+          "dual_gap": 0.6181429094283726,
+          "marginal_kl": 3.8511762653746806,
+          "global_error_bound_ratio": 0.01589183772513735,
+          "next_dual_gap": 0.18157724666656716,
+          "gap_contraction_ratio": 0.2937463876023113,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.10662953323576566,
+          "relative_hessian_min_eigenvalue": 8.594201425859325e-05,
+          "descent_bound_ratio": 0.8821528108764525
+        },
+        {
+          "potential_index": 3,
+          "potential": [
+            -1.25,
+            -0.75,
+            -0.25,
+            0.25,
+            0.75
+          ],
+          "dual_gap": 0.35570022950715374,
+          "marginal_kl": 2.095878246687862,
+          "global_error_bound_ratio": 0.016803382811627493,
+          "next_dual_gap": 0.10202805724878117,
+          "gap_contraction_ratio": 0.28683719825018894,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.002162459319643263,
+          "relative_hessian_min_eigenvalue": 0.020466951215065872,
+          "descent_bound_ratio": 0.8262152793618799
+        },
+        {
+          "potential_index": 4,
+          "potential": [
+            0.12000000000000001,
+            0.12000000000000001,
+            -0.48000000000000004,
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dual_gap": 0.270694035840906,
+          "marginal_kl": 1.6545534564159001,
+          "global_error_bound_ratio": 0.016198563777610236,
+          "next_dual_gap": 0.07464413847657314,
+          "gap_contraction_ratio": 0.27575095345079365,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.10378695313201552,
+          "relative_hessian_min_eigenvalue": 0.0012678449407155276,
+          "descent_bound_ratio": 0.8439450765644274
+        },
+        {
+          "potential_index": 5,
+          "potential": [
+            -0.8188955748110232,
+            -0.09383838768735536,
+            0.10895434786288039,
+            0.17689115781175033,
+            0.09983885536230658
+          ],
+          "dual_gap": 0.002849473468574115,
+          "marginal_kl": 0.025104964939337088,
+          "global_error_bound_ratio": 0.01123786018738359,
+          "next_dual_gap": 9.004258264477816e-05,
+          "gap_contraction_ratio": 0.03159972662943787,
+          "theoretical_contraction_factor": 0.9900990099009901,
+          "conditional_variance_bound_ratio": 0.045766132854089175,
+          "relative_hessian_min_eigenvalue": 0.29040659114325384,
+          "descent_bound_ratio": 0.9097877778838478
+        }
+      ],
+      "trajectory_steps": 116,
+      "final_marginal_residual": 8.787970351420427e-13,
+      "max_trajectory_gap_ratio_above_1e-9": 0.6598700681650177,
+      "trajectory": [
+        {
+          "step": 0,
+          "gap": 0.18930661311349395,
+          "marginal_residual": 0.28216299671254846
+        },
+        {
+          "step": 1,
+          "gap": 0.008196582770251593,
+          "marginal_residual": 0.07177638151136873
+        },
+        {
+          "step": 2,
+          "gap": 0.0023580815702340385,
+          "marginal_residual": 0.03742486681381382
+        },
+        {
+          "step": 5,
+          "gap": 0.0003910776190122478,
+          "marginal_residual": 0.009383427175923331
+        },
+        {
+          "step": 10,
+          "gap": 4.8542861206146704e-05,
+          "marginal_residual": 0.0038295600780640093
+        },
+        {
+          "step": 20,
+          "gap": 7.418066536035717e-07,
+          "marginal_residual": 0.0004779296958070667
+        },
+        {
+          "step": 50,
+          "gap": 2.5758284394328257e-12,
+          "marginal_residual": 8.913866276216709e-07
+        },
+        {
+          "step": 100,
+          "gap": 5.551115123125783e-17,
+          "marginal_residual": 2.5123680913452517e-11
+        }
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "lambda": 0.5,
+      "maximum_absolute_differences": {
+        "dual_gap": 9.2148511043888e-15,
+        "marginal_kl": 1.176836406102666e-14,
+        "next_dual_gap": 1.915134717478395e-15,
+        "conditional_variance_bound_ratio": 3.47499806707674e-14,
+        "relative_hessian_min_eigenvalue": 6.467049118441537e-15,
+        "optimum_potential": 3.019806626980426e-14
+      }
+    },
+    {
+      "lambda": 0.2,
+      "maximum_absolute_differences": {
+        "dual_gap": 1.7541523789077473e-14,
+        "marginal_kl": 5.184741524999481e-14,
+        "next_dual_gap": 1.0158540675320182e-14,
+        "conditional_variance_bound_ratio": 5.3179682879545e-14,
+        "relative_hessian_min_eigenvalue": 4.2549297418759124e-14,
+        "optimum_potential": 3.108624468950438e-14
+      }
+    },
+    {
+      "lambda": 0.1,
+      "maximum_absolute_differences": {
+        "dual_gap": 1.3933298959045715e-13,
+        "marginal_kl": 3.7048586420951324e-11,
+        "next_dual_gap": 4.342304293913912e-12,
+        "conditional_variance_bound_ratio": 3.258145142570612e-10,
+        "relative_hessian_min_eigenvalue": 4.655331675706975e-12,
+        "optimum_potential": 3.1530333899354446e-14
+      }
+    }
+  ],
+  "failures": [],
+  "elapsed_seconds": 7.478261131000181,
+  "passed": true
+}

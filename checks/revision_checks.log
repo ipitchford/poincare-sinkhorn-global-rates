@@ -1,0 +1,33 @@
+A. a = -0.027532340317356827583 (closed form -0.027532340317356827583)
+   b = 0.34588274767781242384 (closed form 0.34588274767781242384)
+   lambda=    0.1: D=0.06470353711834, refined=0.0647035374317, |diff|=3.13e-10 <= 1.42e-06, D/leading=2.2008
+   lambda=   0.05: D=0.02326521736477, refined=0.02326521736477, |diff|=3.31e-19 <= 5.86e-15, D/leading=1.8700
+   lambda=   0.01: D=0.001794542496227, refined=0.001794542496227, |diff|=3.85e-34 <= 9.55e-84, D/leading=1.5260
+   lambda=  0.001: D=3.530048934441e-5, refined=3.530048934441e-5, |diff|=6.02e-36 <= 0.00e+00, D/leading=1.3341
+   lambda= 0.0001: D=5.853554688957e-7, refined=5.853554688957e-7, |diff|=9.40e-38 <= 0.00e+00, D/leading=1.2444
+   lambda= 1.0e-6: D=1.22645641469e-10, refined=1.22645641469e-10, |diff|=2.30e-41 <= 0.00e+00, D/leading=1.1588
+B. a=0.00: c_a=1.0 (closed form 1.0), local deficit ~ 2.0 lambda^(1+a)
+B. a=0.25: c_a=0.845250139774655 (closed form 0.845250139774655), local deficit ~ 2.1131253 lambda^(1+a)
+B. a=0.50: c_a=0.7581280214432971 (closed form 0.7581280214432971), local deficit ~ 2.2743841 lambda^(1+a)
+B. a=0.90: c_a=0.6976750395805736 (closed form 0.6976750395805736), local deficit ~ 2.6511652 lambda^(1+a)
+B. a=1.00: c_a=0.6931471805599453 (closed form 0.6931471805599453), local deficit ~ 2.7725887 lambda^(1+a)
+C. uniform: C_P(num)=0.4052847346 (exact 4/pi^2=0.4052847346)
+   fixed cusp (31): C_P(num)=0.634118 (odd 0.634118, even 0.083046); certified 3/4
+   power a=0.5: C_P(num)=0.892507; certified 1/(2(1-a))=1.0000
+   power a=0.9: C_P(num)=4.879012; certified 1/(2(1-a))=5.0000
+   Prop 7, lambda=0.5: C_P(num)=0.60350, I*J=1.07561, deficit/(pi lam^2)=0.8168, exact/guaranteed deficit = 7.238 (certified C_P), 2.190 (numerical C_P)
+   Prop 7, lambda=0.2: C_P(num)=0.99835, I*J=1.40928, deficit/(pi lam^2)=1.2184, exact/guaranteed deficit = 9.993 (certified C_P), 3.974 (numerical C_P)
+   Prop 7, lambda=0.1: C_P(num)=1.29493, I*J=1.73743, deficit/(pi lam^2)=1.1984, exact/guaranteed deficit = 9.717 (certified C_P), 4.913 (numerical C_P)
+   Prop 7, lambda=0.05: C_P(num)=1.52314, I*J=2.02218, deficit/(pi lam^2)=1.1344, exact/guaranteed deficit = 9.171 (certified C_P), 5.437 (numerical C_P)
+   Prop 7, lambda=0.02: C_P(num)=1.71564, I*J=2.28141, deficit/(pi lam^2)=1.0705, exact/guaranteed deficit = 8.647 (certified C_P), 5.771 (numerical C_P)
+   Prop 7, lambda=0.01: C_P(num)=1.79975, I*J=2.40002, deficit/(pi lam^2)=1.0415, exact/guaranteed deficit = 8.412 (certified C_P), 5.889 (numerical C_P)
+   Prop 7, lambda=0.005: C_P(num)=1.84999, I*J=2.47255, deficit/(pi lam^2)=1.0239, exact/guaranteed deficit = 8.270 (certified C_P), 5.951 (numerical C_P)
+E. Laplace/quadratic, lambda=1.0, start=zero: worst gap ratio 0.13581 <= bound 0.80000; worst gap/(A/lam * increase) = 0.2314 <= 1
+E. Laplace/quadratic, lambda=1.0, start=skewed: worst gap ratio 0.13581 <= bound 0.80000; worst gap/(A/lam * increase) = 0.2314 <= 1
+E. Laplace/quadratic, lambda=0.5, start=zero: worst gap ratio 0.36331 <= bound 0.94118; worst gap/(A/lam * increase) = 0.0924 <= 1
+E. Laplace/quadratic, lambda=0.5, start=skewed: worst gap ratio 0.36331 <= bound 0.94118; worst gap/(A/lam * increase) = 0.0924 <= 1
+E. Laplace/quadratic, lambda=0.3, start=zero: worst gap ratio 0.55243 <= bound 0.97800; worst gap/(A/lam * increase) = 0.0492 <= 1
+E. Laplace/quadratic, lambda=0.3, start=skewed: worst gap ratio 0.55243 <= bound 0.97800; worst gap/(A/lam * increase) = 0.0492 <= 1
+F. uniform two-atom, lambda=0.5: (E(S psi)-E(psi))/(lambda KL) = 1.517986, 2-D = 1.517986
+F. uniform two-atom, lambda=0.1: (E(S psi)-E(psi))/(lambda KL) = 1.900000, 2-D = 1.900000
+Failures: 0. Elapsed: 13.5s.
