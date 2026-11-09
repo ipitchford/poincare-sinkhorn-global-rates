@@ -64,7 +64,7 @@ The positioning statements were checked against primary texts downloaded during 
 * Chafaï and Malrieu (2010), arXiv version: Section 4.1, decomposition of variance;
 * the Simons Institute seminar page of 10 November 2021.
 
-The CRM Pisa talk page returned HTTP 404, so the 2022 Pisa announcement is cited only through CDV's account. Every bibliographic entry was copied from a Crossref or arXiv record; the raw records are kept with the revision materials outside this bundle.
+The report of the 2022 Pisa announcement is cited from CDV, Section 1.1. Every bibliographic entry was copied from a Crossref or arXiv record; the raw records are kept with the revision materials outside this bundle.
 
 ## 4. Version boundaries
 
@@ -89,4 +89,4 @@ The CRM Pisa talk page returned HTTP 404, so the 2022 Pisa announcement is cited
   * the sharp universal constant;
   * a proof of the eventual factor (B/(B + λ²))²;
   * the bias relative to unregularised transport.
-* Priority for the λ² exponent relative to Di Marino's announcements remains uncertain.
+* No priority is claimed for the λ² exponent relative to Di Marino's announcements.

@@ -4,9 +4,9 @@ title: "Curvature, relative entropy, and global Sinkhorn convergence"
 type: software
 authors:
   - name: Anonymous
-version: 0.1.0-candidate
-doi: 10.5281/zenodo.23929617
-date-released: 2026-11-03
+version: 0.1.1-candidate
+doi: 10.5281/zenodo.24091432
+date-released: 2026-11-09
 repository-code: "https://github.com/ipitchford/poincare-sinkhorn-global-rates"
 url: "https://evidencepress.org/releases/poincare-sinkhorn-global-rates/"
 license:
@@ -14,8 +14,8 @@ license:
   - MIT
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.23929617
-    description: "Version DOI (0.1.0-candidate)"
+    value: 10.5281/zenodo.24091432
+    description: "Version DOI (0.1.1-candidate)"
   - type: doi
     value: 10.5281/zenodo.23929616
     description: "Concept DOI (all versions)"

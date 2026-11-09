@@ -1,8 +1,8 @@
-# AI index: curvature, relative entropy, and global Sinkhorn convergence (v0.1.0-candidate)
+# AI index: curvature, relative entropy, and global Sinkhorn convergence (v0.1.1-candidate)
 
 Machine-oriented map of claims, evidence and limits. Human readers should start with
 [README.md](README.md) and the paper [Sinkhorn_Convergence.pdf](Sinkhorn_Convergence.pdf).
-DOI: https://doi.org/10.5281/zenodo.23929617 (concept DOI 10.5281/zenodo.23929616).
+DOI: https://doi.org/10.5281/zenodo.24091432 (concept DOI 10.5281/zenodo.23929616).
 
 ## Normalisation
 
@@ -62,5 +62,5 @@ Multimarginal extensions are open.
 Internal AI-assisted review only: see [review/REVIEW_SUMMARY.md](review/REVIEW_SUMMARY.md). No human peer review,
 independent human reproduction, proof assistant or interval arithmetic. Prior-art audit: [prior_art/novelty_report.md](prior_art/novelty_report.md).
 Closest prior work: CCGT (same rate shape under a Talagrand inequality and Hessian bounds); AFKL (mirror-descent route);
-CDV (curvature estimate used in Corollary 5); S. Di Marino's announced two-marginal result (not inspectable; priority for the
-exponent uncertain). Bibliography: [refs.bib](refs.bib). Earlier versions: [versions/](versions/). Licences: [LICENSE.md](LICENSE.md).
+CDV (curvature estimate used in Corollary 5); S. Di Marino's announced two-marginal result (reported in CDV, Section 1.1; no priority
+claimed for the exponent). Bibliography: [refs.bib](refs.bib). Earlier versions: [versions/](versions/). Licences: [LICENSE.md](LICENSE.md).

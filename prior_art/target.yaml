@@ -36,7 +36,7 @@ claim:
     CCGT Proposition 1.9(i) is sharp.
   exclusions:
     - No claim to have identified the objectively most important open problem.
-    - No assertion of first historical priority from negative search evidence; an earlier announcement (Di Marino) of lambda^2 rates under two Poincare marginals could not be inspected.
+    - No assertion of first historical priority from negative search evidence; no priority is claimed for lambda^2 rates, which CDV (Section 1.1) report as announced earlier by Di Marino under two Poincare marginals.
     - No claim for unbounded targets with quadratic cost (e.g. Gaussian to Gaussian).
     - No claim of the Euclidean Poincare inequality for empirical source measures.
     - No claim that the contraction constant is sharp; the eventual factor (B/(B+lambda^2))^2 is conjectural.

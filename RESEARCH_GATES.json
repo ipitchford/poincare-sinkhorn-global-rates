@@ -1,6 +1,6 @@
 {
  "schemaVersion": "1.0",
- "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate from the dated prior-art record (prior_art/novelty_report.md, 1 November 2026, with a dated note and a 3 November addendum), the internal review searches of 3 November 2026 (review/REVIEW_SUMMARY.md) and the reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "provenance": "Compiled 3 November 2026 for release 0.1.0-candidate (wording updated 9 November 2026 for 0.1.1-candidate) from the dated prior-art record (prior_art/novelty_report.md, 1 November 2026, with a dated note and a 3 November addendum), the internal review searches of 3 November 2026 (review/REVIEW_SUMMARY.md) and the reference retrieval. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
  "contributionMap": [
   {
    "claim": "Theorem 1: curvature-to-entropy transfer giving a polynomial reverse-entropy coefficient and per-iteration contraction 1 - lambda/A.",
@@ -47,7 +47,7 @@
      "query": "registry records for every work in the bibliography (refs.bib)"
     }
    ],
-   "closestPriorWork": "CCGT 2025 Propositions 1.8(i), 1.9(i): same rate shape under a Talagrand inequality and Hessian bounds; Di Marino announcements (two Poincare marginals, not inspectable)",
+   "closestPriorWork": "CCGT 2025 Propositions 1.8(i), 1.9(i): same rate shape under a Talagrand inequality and Hessian bounds; Di Marino announcements (two Poincare marginals, as reported in CDV Section 1.1; no priority claimed)",
    "verdict": "partially-known-cited"
   },
   {
@@ -109,7 +109,7 @@
      "query": "sinkhorn poincare; sinkhorn convergence rate poincare; sinkhorn global convergence rate; sinkhorn dual gap contraction; chizat delalande vaskevicius; related variants"
     }
    ],
-   "closestPriorWork": "Di Marino 2021 seminar abstract mentions counterexamples (details not inspectable)",
+   "closestPriorWork": "Di Marino 2021 seminar abstract mentions counterexamples (cited; no priority claimed)",
    "verdict": "new-in-bounded-search"
   },
   {
@@ -142,7 +142,7 @@
   },
   {
    "citation": "Chizat, Delalande and Vaskevicius, Mathematical Programming 215 (2026) 809-858, doi:10.1007/s10107-025-02242-z",
-   "usedFor": "Curvature estimate (Proposition 5.1), Remarks 3.1 and 5.2, Di Marino account",
+   "usedFor": "Curvature estimate (Proposition 5.1), Remarks 3.1 and 5.2, report of the Di Marino announcement (Section 1.1)",
    "readWhat": "Sections 1-5 and appendices used",
    "date": "2026-11-01",
    "evidenceLocator": "prior_art/novelty_report.md; manuscript Sections 2.3 and 6"
@@ -157,14 +157,12 @@
  ],
  "limitationTriage": [
   {
-   "limitation": "Priority for the lambda^2 exponent under Poincare assumptions is uncertain: Di Marino announced a two-marginal result whose proofs could not be inspected.",
-   "closingQuestion": "What exactly did the announced result prove?",
-   "triedOrSearched": "Simons 2021 abstract read; Pisa 2022 announcement known only through CDV; searches of 1 and 3 November 2026.",
-   "estimatedCost": "days",
-   "decision": "OPEN",
-   "cheap": false,
-   "reasonOpen": "Requires author enquiry, out of scope.",
-   "whyNotClosedNow": "No public text available."
+   "limitation": "Priority for the lambda^2 exponent under Poincare assumptions is not claimed: CDV (Section 1.1) report an earlier two-marginal announcement by Di Marino.",
+   "closingQuestion": "Is the paper's priority statement accurate?",
+   "triedOrSearched": "Simons 2021 abstract cited; Pisa 2022 announcement cited from CDV Section 1.1; searches of 1 and 3 November 2026. Wording revised 9 November 2026 (0.1.1-candidate) by owner ruling of 4 November 2026.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
   },
   {
    "limitation": "Population (continuous) measures only; empirical sources are not covered.",

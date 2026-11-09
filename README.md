@@ -1,6 +1,6 @@
 # Curvature, relative entropy, and global Sinkhorn convergence
 
-Research bundle. First version 1 November 2026; revised 3 November 2026 after one round of review.
+Research bundle. First version 1 November 2026; revised 3 November 2026 after one round of review; version 0.1.1-candidate, 9 November 2026 (wording correction).
 
 ## Main results and status
 
@@ -11,7 +11,7 @@ The paper gives global, explicit convergence rates for the exact (continuous) Si
 * **Global linear dependence on λ for bounded densities.** The curvature estimate of Chizat, Delalande and Vaškevičius (CDV) gives the global factor C/(C + λ) in their bounded-density and log-concave settings (Corollary 5).
 * **Sharpness.** No exponent below 2 is possible for a fixed source, even eventually (Theorem 6). Order λ² is attained uniformly over a bounded Poincaré class (Proposition 7) but by no single fixed source (Proposition 8). The same examples show that the λ² exponent in the Talagrand-inequality rates of Chiarini, Conforti, Greco and Tamanini (CCGT) is sharp (Corollary 9).
 
-Closest prior work: CCGT's Propositions 1.8(i) and 1.9(i) give the same rational factor, with a Talagrand constant τ ≥ C_P, under Hessian bounds on the cost. Here the Talagrand inequality is replaced by a Poincaré inequality and the Hessian bounds by a first-derivative condition, the factor holds for every λ, and the sharpness results are new. Section 9 of the paper gives a side-by-side comparison. An earlier announcement by S. Di Marino of λ² rates under Poincaré inequalities on both marginals, with counterexamples, could not be inspected, so priority for the exponent remains uncertain.
+Closest prior work: CCGT's Propositions 1.8(i) and 1.9(i) give the same rational factor, with a Talagrand constant τ ≥ C_P, under Hessian bounds on the cost. Here the Talagrand inequality is replaced by a Poincaré inequality and the Hessian bounds by a first-derivative condition, the factor holds for every λ, and the sharpness results are new. Section 9 of the paper gives a side-by-side comparison. CDV (Section 1.1) report an earlier announcement by S. Di Marino of λ² rates under Poincaré inequalities on both marginals; no priority is claimed for the exponent.
 
 The mathematical statements are informal proofs. No proof assistant or interval arithmetic was used. The supplied floating-point programmes check selected formulas, constants and trajectories; they are not the proof of the theorems.
 
@@ -67,9 +67,13 @@ pandoc manuscript.md --from=markdown+tex_math_dollars --standalone --shift-headi
 
 A rebuild may change PDF metadata and typesetting across versions, so the PDF's byte hash need not be stable even when the source is unchanged.
 
+## Changes in 0.1.1-candidate
+
+The wording about S. Di Marino's announced results (manuscript Sections 2.3 and 9, README, AI index, research gates, verification notes, review summary and prior-art notes) now cites CDV, Section 1.1, as the source of the report and states that no priority is claimed for the exponent. No theorem, proof, figure or code changed.
+
 ## How to cite
 
-Anonymous (2026). *Curvature, relative entropy, and global Sinkhorn convergence* (version 0.1.0-candidate). Evidence Press. https://doi.org/10.5281/zenodo.23929617
+Anonymous (2026). *Curvature, relative entropy, and global Sinkhorn convergence* (version 0.1.1-candidate). Evidence Press. https://doi.org/10.5281/zenodo.24091432
 
 Concept DOI (all versions): https://doi.org/10.5281/zenodo.23929616. Release page: https://evidencepress.org/releases/poincare-sinkhorn-global-rates/. Repository: https://github.com/ipitchford/poincare-sinkhorn-global-rates.
 

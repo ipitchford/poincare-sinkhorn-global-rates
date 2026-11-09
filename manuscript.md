@@ -1,7 +1,7 @@
 ---
 title: "Curvature, relative entropy, and global Sinkhorn convergence"
 author: "Anonymous"
-date: "3 November 2026 (revised version)"
+date: "3 November 2026 (revised version); version 0.1.1-candidate, 9 November 2026"
 lang: en-GB
 fontsize: 11pt
 geometry: margin=25mm
@@ -63,7 +63,7 @@ All upper contraction bounds hold from iteration zero and for every bounded init
 
 *Probabilistic reading.* Hypothesis (8) says that every source-normalised coupling has maximal correlation at most $\sqrt{1-\lambda/A}$ (Remark 4.1). Inequalities (25)--(27) are the classical decomposition of variance into a mean conditional variance and the variance of a conditional mean, which is used for functional inequalities of Gibbs measures and mixtures (Otto and Reznikoff 2007; Grunewald, Otto, Villani and Westdickenberg 2009; Chafaï and Malrieu 2010).
 
-*Priority.* CDV report an announcement by S. Di Marino at a 2022 Pisa workshop of a rate $1-\Theta(\lambda^2/c_\infty^2)$ for bounded Lipschitz costs when both marginals satisfy Poincaré inequalities. A 2021 Simons Institute seminar abstract by Di Marino also mentions counterexamples. We could not inspect those proofs. The exponent $\lambda^2$ under Poincaré assumptions was therefore announced earlier. The gain claimed here is that one marginal suffices, together with the explicit constant, the generality in the target, and the unbounded costs. Priority for the exponent and for counterexamples remains uncertain.
+*Priority.* CDV (Section 1.1) report an announcement by S. Di Marino at a 2022 Pisa workshop of a rate $1-\Theta(\lambda^2/c_\infty^2)$ for bounded Lipschitz costs when both marginals satisfy Poincaré inequalities. A 2021 Simons Institute seminar abstract by Di Marino also mentions counterexamples. The exponent $\lambda^2$ under Poincaré assumptions was therefore announced earlier. The gain claimed here is that one marginal suffices, together with the explicit constant, the generality in the target, and the unbounded costs. We claim no priority for the exponent or for counterexamples.
 
 ### 2.4. Roadmap
 
@@ -763,7 +763,7 @@ On compact sources, Poincaré and Talagrand inequalities are equivalent up to co
 * **Unbounded and smooth settings.** Conforti, Durmus and Greco (2023) proved exponential convergence for quadratic cost on $\mathbb R^d$ when both marginals have asymptotically positive log-concavity profiles. Greco, Noble, Conforti and Durmus (2023) analysed the torus by a coupling approach. Ghosal and Nutz (2026) proved non-asymptotic sublinear rates for a large class of costs and marginals, including quadratic cost with sub-Gaussian marginals. Delalande (2022) quantified semi-discrete entropic transport as a function of the regularisation. Entropic transport and its applications are surveyed by Peyré and Cuturi (2019). Cuturi (2013) popularised Sinkhorn's algorithm for computing transport distances.
 * **Continuous-time structure.** Srinivasan and Slotine (2026) formulate conditional-expectation and spectral-gap structures for a continuous-time Sinkhorn flow. Equation (27) gives a uniform quantitative bound for the corresponding quantity, and Theorem 1 turns it into a discrete-iteration guarantee.
 
-We searched the literature on 1 November 2026 and again during this revision (web search, arXiv full text, publisher pages and citation links). We found no earlier statement of the explicit bounds or the sharpness constructions proved here. A negative search is not a proof of priority, and the unpublished details of Di Marino's announcements remain a material uncertainty.
+We searched the literature on 1 November 2026 and again during this revision (web search, arXiv full text, publisher pages and citation links). We found no earlier statement of the explicit bounds or the sharpness constructions proved here. A negative search is not a proof of priority, and we claim no priority over Di Marino's announcements.
 
 ### 9.3. Open questions
 
@@ -771,11 +771,13 @@ We searched the literature on 1 November 2026 and again during this revision (we
 2. Does a bounded density on a non-convex Poincaré domain give a global rate linear in $\lambda$ (Section 7.6)?
 3. Can unbounded targets with quadratic cost, such as Gaussian to Gaussian, be treated under one Poincaré inequality?
 4. Empirical sources do not satisfy (6). A discrete analogue would need a graph Poincaré inequality, together with a discrete version of the covariance identity (25).
-5. Does Theorem 1 extend to multimarginal block-coordinate Sinkhorn with one Poincaré marginal per block? Di Marino's announced result extends to several marginals.
+5. Does Theorem 1 extend to multimarginal block-coordinate Sinkhorn with one Poincaré marginal per block? CDV report that Di Marino's announcement extends to several marginals.
 
 ## Declarations
 
-This is version 0.1.0-candidate, archived at https://doi.org/10.5281/zenodo.23929617 (all versions: https://doi.org/10.5281/zenodo.23929616); author Anonymous; AI-assisted and unrefereed; text and figures CC0-1.0, code MIT.
+This is version 0.1.1-candidate, archived at https://doi.org/10.5281/zenodo.24091432 (all versions: https://doi.org/10.5281/zenodo.23929616); author Anonymous; AI-assisted and unrefereed; text and figures CC0-1.0, code MIT.
+
+*Changes in 0.1.1-candidate (9 November 2026).* The wording about S. Di Marino's announced results in Sections 2.3 and 9 and in the references now cites CDV, Section 1.1, as the source of the report and states plainly that no priority is claimed for the exponent or for counterexamples. No theorem, proof, figure or code changed.
 
 ## References
 
@@ -839,4 +841,4 @@ Srinivasan, A., & Slotine, J.-J. (2026). *Thermodynamic structure of the Sinkhor
 
 Simons Institute for the Theory of Computing. (2021, November 10). *GMOS weekly seminar: The speed of Sinkhorn algorithm meets Poincaré inequality* (S. Di Marino) [Seminar abstract]. <https://simons.berkeley.edu/events/gmos-weekly-seminar-speed-sinkhorn-algorithm-meets-poincare-inequality>
 
-The 2022 Pisa workshop announcement is known to us only through CDV's account (CDV, Section 1.1); we found no stable public URL for it.
+The report of the 2022 Pisa workshop announcement is cited from CDV, Section 1.1.

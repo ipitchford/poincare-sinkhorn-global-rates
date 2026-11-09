@@ -45,7 +45,7 @@ Two reviewers had estimated the true Poincaré constant of the cusp source (38) 
 
 **Credit to CDV.** The curvature estimate behind Corollary 5 is CDV's Proposition 5.1. CDV's Remark 5.2 anticipates exactly the improvement that Corollary 5 delivers. The paper now credits both explicitly, and quotes CDV's Remark 3.1 exactly instead of paraphrasing it.
 
-**Priority (Di Marino).** CDV report a 2022 announcement by S. Di Marino of a rate $1-\Theta(\lambda^2/c_\infty^2)$ for bounded Lipschitz costs when both marginals satisfy Poincaré inequalities. A 2021 seminar abstract by Di Marino also mentions counterexamples. Neither proof could be inspected; the 2022 workshop page was unavailable. The paper says that the exponent $\lambda^2$ was announced earlier, and claims only one marginal instead of two, the explicit constant, generality in the target, and unbounded costs. Priority for the exponent and for counterexamples is stated as uncertain.
+**Priority (Di Marino).** CDV report a 2022 announcement by S. Di Marino of a rate $1-\Theta(\lambda^2/c_\infty^2)$ for bounded Lipschitz costs when both marginals satisfy Poincaré inequalities. A 2021 seminar abstract by Di Marino also mentions counterexamples. The paper says that the exponent $\lambda^2$ was announced earlier, and claims only one marginal instead of two, the explicit constant, generality in the target, and unbounded costs. No priority is claimed for the exponent or for counterexamples. (Wording revised 9 November 2026 for 0.1.1-candidate.)
 
 **Bounded costs only.** In the first version Theorem 2 required a bounded cost, which excluded quadratic cost with Gaussian or other unbounded sources. Several reviewers saw this as the main limit on the paper's reach. The revision added Theorem 3 and Corollary 4. They cover any Poincaré source on $\mathbb R^d$, quadratic or bilinear cost, and any compactly supported target, including point clouds, for every $\lambda$. The two-sided exponential law is an example: it satisfies a Poincaré inequality but no Talagrand inequality.
 
@@ -68,6 +68,6 @@ Two reviewers had estimated the true Poincaré constant of the cusp source (38) 
 * No proof-assistant formalisation.
 * No interval arithmetic. All numerical values are floating-point.
 * A bounded literature search only: web search, arXiv full text, publisher pages, citation links, the Evidence Press catalogue and GitHub. No complete MathSciNet or zbMATH search was made.
-* No enquiry to the authors of CDV or CCGT, or to Di Marino. The unpublished proofs behind the announced results were not obtained.
+* No enquiry to the authors of CDV or CCGT, or to Di Marino.
 
 The earlier literature audit in `prior_art/novelty_report.md` predates the revision. Its description of the CCGT overlap is superseded by Sections 2.3 and 9.1 of the paper, as a note at the top of that report says.
